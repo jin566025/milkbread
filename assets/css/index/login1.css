@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+
+
+
+a {
+    color:#0088DB;
+    text-decoration:none;
+    cursor:pointer
+}
+a:hover {
+    color:#2A5E8E
+}
+ a{color:#5f5859;}

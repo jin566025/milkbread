@@ -1,0 +1,414 @@
+@charset "utf-8";
+/* CSS Document */
+
+#Upbox ul li
+{
+	margin:0px;
+}
+
+#Upbox ul li img
+{
+		width:100%;
+		height:100%;
+}
+	
+#outsideframe .LeftBox #title_state img
+{
+		height:26px;
+		width:auto;
+		
+}
+	
+#outsideframe .LeftBox #title_state #phone_text
+{
+		margin-left:10px;
+}
+
+@media screen and (max-width:1920px)
+{
+	#outsideframe .LeftBox
+	{
+		max-width:170px;
+	}
+	
+	#outsideframe .RightBox
+	{
+		width:1610px;
+	}
+	
+	#Upbox ul li
+	{
+		width:228px;
+		height:228px;
+	}
+	
+	#Upbox ul li .subbox_ac
+   {
+		top:85%;
+    }
+	
+	#Upbox ul .hotsale div p
+	{
+		padding-top:81px;
+	}
+	
+	
+}
+
+
+@media screen and (max-width:1600px)
+{
+	#outsideframe .LeftBox
+	{
+		max-width:110px;
+	}
+	
+	#outsideframe .RightBox
+	{
+		width:1368px;
+	}
+	
+	#Upbox ul li
+	{
+		width:226px;
+		height:226px;
+	}
+	
+	#outsideframe .LeftBox #title_state img
+	{
+		height:19px;
+		width:auto;
+		
+	}
+	
+	#outsideframe .LeftBox #title_state #phone_text
+	{
+		margin-left:4px;
+	}
+	
+	#Upbox ul li .subbox_ac
+   {
+		top:87%;
+    }
+	
+	
+}
+
+
+@media screen and (max-width:1440px)
+{
+	#outsideframe .LeftBox
+	{
+		max-width:170px;
+	}
+	
+	#outsideframe .RightBox
+	{
+		width:1160px;
+	}
+	
+	#Upbox ul li
+	{
+		width:230px;
+		height:230px;
+	}
+	
+	#outsideframe .LeftBox #title_state img
+   {
+		height:26px;
+		width:auto;
+		
+   }
+	
+#outsideframe .LeftBox #title_state #phone_text
+  {
+		margin-left:10px;
+  }
+  
+  #Upbox ul li .subbox_ac
+ {
+		top:87%;
+  }
+	
+	
+}
+
+
+@media screen and (max-width:1366px)
+{
+	#outsideframe .LeftBox
+	{
+		max-width:124px;
+	}
+	
+	#outsideframe .RightBox
+	{
+		width:1140px;
+	}
+	
+	#Upbox ul li
+	{
+		width:226px;
+		height:226px;
+	}
+	
+	
+	#outsideframe .LeftBox #title_state img
+	{
+		height:20px;
+		width:auto;
+		
+	}
+	
+	#outsideframe .LeftBox #title_state #phone_text
+	{
+		margin-left:4px;
+	}
+	
+	
+	#Upbox ul li .subbox_ac
+	{
+		top:85%;
+	}
+	
+}
+
+
+
+@media screen and (max-width:1280px)
+{
+	#outsideframe .LeftBox
+	{
+		max-width:180px;
+	}
+	
+	#outsideframe .RightBox
+	{
+		width:944px;
+	}
+	
+	#Upbox ul li
+	{
+		width:234px;
+		height:234px;
+	}
+	
+	#outsideframe .LeftBox #title_state img
+   {
+		height:26px;
+		width:auto;
+		
+   }
+	
+#outsideframe .LeftBox #title_state #phone_text
+  {
+		margin-left:10px;
+  }
+  
+  #Upbox ul li .subbox_ac
+	{
+		top:87%;
+	}
+	
+	
+}
+
+
+@media screen and (max-width:1024px)
+{
+	#outsideframe .LeftBox
+	{
+		max-width:180px;
+	}
+	
+	#outsideframe .RightBox
+	{
+		width:708px;
+	}
+	
+	#Upbox ul li
+	{
+		width:234px;
+		height:234px;
+	}
+	
+	#outsideframe .LeftBox #title_state img
+   {
+		height:26px;
+		width:auto;
+		
+   }
+	
+#outsideframe .LeftBox #title_state #phone_text
+  {
+		margin-left:12px;
+  }
+  
+  #Upbox ul li .subbox_ac
+	{
+		top:85%;
+	}
+	
+	
+}
+
+
+@media screen and (max-width:768px)
+{
+	#outsideframe .LeftBox
+	{
+		max-width:110px;
+	}
+	
+	#outsideframe .RightBox
+	{
+		width:504px;
+	}
+	
+	#Upbox ul li
+	{
+		width:166px;
+		height:166px;
+	}
+	
+	#outsideframe .LeftBox #title_state img
+   {
+		height:26px;
+		width:auto;
+		
+   }
+	
+#outsideframe .LeftBox #title_state #phone_text
+  {
+		margin-left:12px;
+  }
+  
+  #Upbox ul li .subbox_ac
+	{
+		top:80%;
+	}
+	
+	
+	#Upbox ul .hotsale div p
+	{
+		padding-top:52px;
+	}
+	
+	
+}
+
+
+@media screen and (max-width:480px)
+{
+	#outsideframe .LeftBox
+	{
+		max-width:110px;
+	}
+	
+	#outsideframe .RightBox
+	{
+		width:336px;
+	}
+	
+	#Upbox ul li
+	{
+		width:166px;
+		height:166px;
+	}
+	
+	#outsideframe .LeftBox #title_state img
+   {
+		height:26px;
+		width:auto;
+		
+   }
+	
+#outsideframe .LeftBox #title_state #phone_text
+  {
+		margin-left:12px;
+  }
+  
+  #Upbox ul li .subbox_ac
+	{
+		top:80%;
+	}
+	
+	
+}
+
+
+@media screen and (max-width:400px)
+{
+
+	#Upbox ul li
+	{
+		width:166px;
+		height:166px;
+	}
+	
+	#outsideframe .LeftBox #title_state img
+   {
+		height:26px;
+		width:auto;
+		
+   }
+	
+#outsideframe .LeftBox #title_state #phone_text
+  {
+		margin-left:12px;
+  }
+  
+  #Upbox ul li .subbox_ac
+	{
+		top:80%;
+	}
+	
+	
+}
+
+#Upbox ul .hotsale div
+{
+	width:100%;
+	height:100%;
+}
+@media screen and (max-width:414px)
+{
+	#outsideframe .LeftBox,#outsideframe .RightBox{
+		width:340px;
+	}
+	#leftlist{
+		width: 414px;
+		font-size: 0;
+	}
+	#leftlist li a{
+		font-size: 12px;
+	}
+}
+@media screen and (max-width:375px)
+{
+	#outsideframe .LeftBox,#outsideframe .RightBox{
+		width:338px;
+	}
+	#leftlist{
+		width: 375px;
+		font-size: 0;
+	}
+}
+@media screen and (max-width:320px)
+{
+	#outsideframe .LeftBox,#outsideframe .RightBox{
+		width: 300px;
+	}
+	#leftlist{
+		width: 320px;
+		font-size: 0;
+	}
+	#Upbox ul li{
+		width:145px;
+		height:145px;
+	}
+	#Upbox ul li img{
+		width:145px;
+		height:145px;
+	}
+}

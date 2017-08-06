@@ -1,0 +1,429 @@
+﻿<!DOCTYPE html>
+<html>
+    <head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-transform" /> 
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes" />
+    <title>会员政策</title>
+    
+    <link rel="stylesheet" href="assets/css/productInfo/main.css" />    
+    <link rel="stylesheet" href="assets/headCss/ShoppingCar.css">
+    <link href="assets/css/index2.0.css" rel="stylesheet">
+    <link href="assets/css/product2.0.css" rel="stylesheet">
+    <link href="assets/css/beautifulRoom2.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/controls.css">
+    <link rel="stylesheet" href="assets/css/product.css" >
+    <link rel="stylesheet" href="assets/css/2associator.css"/>
+    <script src="fullpage/js/jquery-1.8.3.min.js"></script>
+    <script src="assets/js/Menu.js"></script>
+    <script src="assets/js/LoginBox.js"></script>
+    <script src="assets/js/MenuList.js"></script>
+	<script src="assets/js/main.js"></script>     
+	<script src="assets/js/hide.js"></script>
+ 
+  </head>
+  <body>
+
+        <!--totop-->
+        <div id="goToTop">
+          <div class="animate-bounce-up"></div>
+          <a id="backtop" href="#H3"><img src="images/top_line.png"/></a>
+        </div>
+
+        <div class="Shell_box"></div>
+        <div class="Shell_box" style="z-index:1020;"></div>
+
+<!--登陆框-->
+<div id="LoginBox">
+  <div id="first_box">
+    <img id="LoginClose" src="images/close_1.png" onMouseOver="javascript:$(this).get(0).src='images/close_2.png';" onMouseOut="javascript:$(this).get(0).src='images/close_1.png';">
+    <img src="images/login_logo.png" id="Llogo"><span class="welcome"></span>
+  </div>
+  <div id="second_box">
+    <div id="QRCode">
+    <img src="images/login_er.png">
+    <p>请使用微信扫一扫一键登录</p>
+    <p>关注并绑定牛奶面包公众服务号，获取订单实时状态及家居潮流趋势。</p>
+    </div>
+  </div>
+  <div id="last_box"><img src="images/logo_footer.png"></div>
+</div>
+
+<div id="SearchBox">
+<input type="text"  id="stext" value="请输入关键词" onFocus="javascript:if(this.value=='请输入关键词')this.value='';" onBlur="javascript:if(this.value==''||this.value==null)this.value='请输入关键词';">
+<img id="SearchIcon" src="images/search_1.png" style="margin-left:25px;">
+<img id="SearchClose" src="images/close_1.png" style="margin-left:70px;" onMouseOver="javascript:$(this).get(0).src='images/close_2.png';" onMouseOut="javascript:$(this).get(0).src='images/close_1.png';">
+</div>
+
+<div id="head">
+  <div id="Black"></div>
+  <div id="LogoFiled">
+    <a href="Index.html"><img  style="" src="assets/css/images/header_logo.svg" ></a>
+  </div>
+  <div><a href="#" id="Menu" onClick="javascript:$('#LeftPop').LMenu();">Menu</a></div>
+  <!--<div style="text-align:center;border:1px solid red;">&nbsp;</div>-->
+  <div>
+  <a class="NaN Login" href="#"><span>Login</span></a><a class="NaN Order" href="Orders.html"><span>Orders(1)</span></a><a class="NaN Fav" href="Collection.html"><span>Favorites</span></a><!--
+--><a class="NaN Bag" href="#"><span>Bag(40)</span></a><!--
+--><a class="NaN Search" href="#"><span>Search</span></a>
+  </div>
+</div>
+
+
+<div id="RightPop">
+   <img src="assets/css/images/close.svg" id="MenuClose" onClick="javascript:$('#RightPop').RMenu();">
+   <div id="Rm">Bag</div>
+   <ul id="shopping_car">
+     <li class="first_p">
+       <a href="Products_Detal_New.html">
+         <img src="images/list1.png">
+         <div class="carcp">
+           <span>名称:花瓶</span>
+           <span>数量:10</span>
+           <span>价格:1200</span>
+         </div>
+       </a>
+     </li>
+     <li>
+       <a href="Products_Detal_New.html#">
+         <img src="images/list1.png">
+         <div class="carcp">
+           <span>名称:花瓶</span>
+           <span>数量:10</span>
+           <span>价格:1200</span>
+         </div>
+       </a>
+     </li>
+     <li>
+       <a href="Products_Detal_New.html">
+         <img src="images/list1.png">
+         <div class="carcp">
+           <span>名称:花瓶</span>
+           <span>数量:10</span>
+           <span>价格:1200</span>
+         </div>
+       </a>
+     </li>
+     <li class="filed"><a href="ShoppingCar.html" id="goto">前往购物车</a></li>
+   </ul>
+   
+   <ul id="pc_hidden">
+     <li><a href="#" id="Login" >Login</a></li>
+     <li><a href="#">Orders(1)</a></li>
+     <li><a href="#">Favorites</a></li>
+     <li><a href="#" id="Search" >Search</a></li>
+     
+   </ul>
+   </div>
+
+
+<div id="LeftPop">
+  <img src="assets/css/images/close.svg" id="MenuClose" onClick="javascript:$('#LeftPop').LMenu();">
+  <div>Menu</div>
+  <ul>
+    <li><a href="Index.html"><span class="en">Home</span><span class="ch">回到主页</span></a></li>
+    <li><a class="left_line">-</a></li>
+    <li><a href="BeautifulRoom.html"><span class="en">Beautifully Small House</span><span class="ch">美丽小居室</span></a></li>
+    <li><a href="#" class="left_line">-</a></li>
+    <li><a href="AllProduct_New.html"><span class="en">All Products</span><span class="ch">所有商品</span></a></li>
+    <li><a href="Classified.html"><span class="en">Classified Goods</span><span class="ch">分类商品</span></a></li>
+    <li><a href="NewestProduct.html"><span class="en">Newest Products</span><span class="ch">最新商品</span></a></li>
+    <li><a href="#" class="left_line">-</a></li>
+    <li><a href="2Story.html"><span class="en">Brand Story</span><span class="ch">品牌故事</span></a></li>
+    <li><a href="#" class="left_line">-</a></li>
+    <li><a href="#"><span class="en">Art into Life</span><span class="ch">艺心在延续</span></a></li>
+    <li><a href="#" class="left_line">-</a></li>
+    <li><a href="Index2.html"><span class="en">个人网站</span><span class="ch">个人网站</span></a></li>
+  </ul>
+</div>
+            
+
+            <!--中间部分-->
+             <!--主体部分-->
+            <div id="Main_Page">
+            	<div class="top_part">
+            		会员政策&nbsp;Associator
+            	</div>
+            	<div class="two_part">
+            		<div id="left_part">
+            			<div>
+            				<img src="images/l-img.jpg" />
+            			</div>
+            			<div>
+            				<img src="images/association.png" />
+            			</div>
+            		</div>
+            		<div class="associator_txt">
+            			<div class="associator_txt2">
+
+            				<h6><img src="images/dot2.png" style="padding-right: 10px;">牛奶面包创意家居会员等级</h6>
+            				<p><span>注册会员：只要您关注牛奶面包创意家居微信、微博，或者在官网注册、店铺自助注册留下个人信息，就可以成为牛奶面包创意家居的注册会员</span></p>
+            				<p><span>蚂蚁会员：12个月内在牛奶面包创意家居线上线下店铺累计消费金额5000元以下的注册会员</span></p>
+            				<p><span>小猫会员：12个月内在牛奶面包创意家居线上线下店铺累计消费金额5000-9999元的注册会员</span></p>
+            				<p><span>老虎会员：12个月内在牛奶面包创意家居线上线下店铺累计消费金额10000-49999元的注册会员</span></p>
+							<p><span style="padding-bottom: 25px;">大象会员：12个月内在牛奶面包创意家居线上线下店铺累计消费金额50000元及以上的注册会员</span></p>
+
+            				<h6><img src="images/dot2.png" style="padding-right: 10px;">会员福利</h6>
+            				<p><span>1. 关于会员活动：小猫/老虎/大象会员还有机会到线下生活馆享受免费咖啡点心，获赠免费电影门票、牛奶面包创意家居咖啡券等。</span></p>
+            				<p><span>2. 关于折扣：特价产品，礼品卡等不享受折扣优惠。</span></p>
+							<p><span style="padding-bottom: 25px;">3. 关于会员升级时如何享受会员生日礼: 会员需要在当年生日前三天消费累积至升级的标准才可以于本年享受升级后的生日礼，否则需要第二年才能享受。举例说明：蚂蚁会员A的生日为5月24日，如果A希望享受到小猫会员的生日礼，则需在本年5月21日累积消费至5000元或以上，5月22日系统将A升级为小猫会员，5月23日A将提前一天收到生日短信，5月24日享受生日礼。</span></p>
+
+            				<h6>* 所有会员政策和规则的最终解释权归牛奶面包创意家居所有</h6>
+            				
+            			</div>
+            			
+            			
+            		</div>
+            		<div style="clear: both;"></div>
+            	</div>
+
+            </div>
+            
+            <!-- 结束主体-->
+             <!-- 结束主体-->
+             <!-- 底部 -->
+<div id="blank">
+  
+</div>
+<div class="bottom_section">
+    <div id="bottom">
+        <div id="navigation">
+        		<div class="bottom_nav">
+	              <ul>
+	                <li><a class="nav_first" href="2ContactUs.html">关于我们</a></li>
+	              </ul>
+	            </div>
+	            <div class="bottom_nav">
+	              <ul>
+	                <li><a class="nav_first" href="2Common_problem.html">购物指南</a></li>
+	              </ul>
+	            </div>
+	            <div class="bottom_nav">
+	              <ul>
+	                <li><a class="nav_first" href="2Associator.html">会员中心</a></li>
+	              </ul>
+	            </div>
+
+	            <div class="bottom_nav">
+	              <ul>
+	                <li><a class="nav_first" href="2Payment.html">支付方式</a></li>
+	              </ul>
+	            </div>
+	            <div class="bottom_nav">
+	              <ul>
+	                <li><a class="nav_first" href="2Logistical_fare.html">配送方式</a></li>
+	              </ul>
+	            </div>
+	            <div class="bottom_nav">
+	              <ul>
+	                <li><a class="nav_first" href="2Return_exchange.html">售后服务</a></li>
+	              </ul>
+	            </div>
+        </div>
+
+         <div id="bottom_text">
+           <p>在线客服</p>
+           <P class="online_service"><a href=""><IMG id="tq_kefu_main" version="20100823" style="background:transparent none repeat scroll 0% 0%;cursor:pointer" onclick="TQKF.kefuimg.Distrabute()" /></a></P>
+           <p class="service">客服电话</p>
+           <p class="tel">0574-88081153</p>
+         </div>
+   
+         <ul id="ul_image">
+            <li class="li_img"><img src="images/weibo.png"><a>官方微博</a></li> 
+            <li class="li_img"><img src="images/guanwang.png"><a>官方网站</a></li>
+            <li class="li_img"><img src="images/weixin_er.png"><a>官方微信</a></li>
+            
+        </ul>
+          
+    </div>
+    <div class="copyright">
+      <span style="color:#5E5C5C">copyright © 2015-2016 milk&bread</span>
+      <span style="color:#5E5C5C">All Rights Reserved.| 浙ICP备15000846号-1</span>
+    </div>
+  </div>
+       
+        <script>
+          
+            $(document).ready(function (e) {
+                
+                
+                        $('.ad_list').on('click','.Radio_Box',function(e){
+                            
+                            var obj = $('.ad_list .Radio_Box');
+                            for(i=0;i<obj.length;i++)
+                            obj.eq(i).get(0).checked?obj.eq(i).addClass('Radio_Box_Sel'):obj.eq(i).removeClass('Radio_Box_Sel');
+                        });
+                        
+                        $('#SendType div').click(function(e) {
+                            var obj = $('#SendType div');
+                            for(i=0;i<obj.length;i++)
+                            obj.eq(i).removeClass('Frame_Cols');
+                            
+                            $(this).addClass('Frame_Cols');
+                        });
+                        
+                        $('.Check_Box').click(function(e) {
+                            $(this).get(0).checked?$(this).addClass('Check_Box_Selected'):$(this).removeClass('Check_Box_Selected');
+                        });
+                        
+                        $('.login').click(function (e){
+                                
+                                $('.theme-popover').FixedPop();
+                                $('#CoverShell').PopUpHideShell();
+                                
+                                });
+                                
+                            $('.search').click(function (e){
+                                
+                                $('.search-popover').FixedPop();
+                                $('#CoverShell').PopUpHideShell();
+                                
+                                });
+                                
+                            $('.head_close').click(function(e) {
+                                $('.search-popover').ClosePop();
+                                $('.theme-popover').ClosePop();
+                                $('#CoverShell').CloseHide();
+                            });
+                            
+                            $('.nm_sub').click(function(e){
+                                var i = $('.nm_sub').index($(this)[0]);
+                                var d = parseInt($('.nm_val').eq(i).val(),10);
+                                if(d<=0)d=0;
+                                else d--;
+                                $('.nm_val').eq(i).val(d);
+                                });
+                                
+                                $('.nm_plus').click(function(e){
+                                var i = $('.nm_plus').index($(this)[0]);
+                                var d = parseInt($('.nm_val').eq(i).val(),10);
+                                d++;
+                                $('.nm_val').eq(i).val(d);
+                                });
+                
+                
+            });
+        </script>
+          <script>
+            function pageScroll() { 
+                         window.scrollBy(0,-10); 
+                         scrolldelay = setTimeout('pageScroll()',500); 
+                         if($(document).scrollTop()==0) clearTimeout(scrolldelay); 
+                } 
+          </script>
+        <script>
+          window.onscroll=function()
+          {
+            if($(window).scrollTop()>=20)
+            $('#goToTop').addClass('see');
+            else 
+            $('#goToTop').removeClass('see');
+          }
+          </script>
+
+          <script type="text/javascript">
+          $(document).ready(function(){
+              //首先将#back-to-top隐藏
+              $("#goToTop").hide();
+              //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
+              $(function () {
+                $(window).scroll(function(){
+              if ($(window).scrollTop()>30){
+                $("#goToTop").fadeIn(500);
+              }
+              else
+              {
+                $("#goToTop").fadeOut(500);
+              }
+              });
+              //当点击跳转链接后，回到页面顶部位置
+              $("#goToTop").click(function(){
+                $('body,html').animate({scrollTop:0},1000);
+                return false;
+              });
+              });
+              });
+          </script>
+
+    <script>
+          
+            $(document).ready(function (e) {
+                
+                $('.header input').click(function(e) {
+                var sel = $(this).get(0).checked;
+                var obj = $('.Check_Box');
+                for(i=0;i<obj.length;i++)
+                {
+                    obj.eq(i).get(0).checked = sel;
+                    if(obj.eq(i).get(0).checked)
+                    obj.eq(i).addClass('Check_Box_Selected');
+                    else 
+                    obj.eq(i).removeClass('Check_Box_Selected');
+                }
+                });
+                
+                $('.items .Check_Box').click(function(e){
+                    
+                    $(this).get(0).checked?$(this).addClass('Check_Box_Selected'):$(this).removeClass('Check_Box_Selected');
+                    var obj = $('.items .Check_Box');
+                    var now = 0;
+                    var c = 0;
+                    for(i=0;i<obj.length;i++)
+                    {
+                        if(obj.eq(i).get(0).checked)c++;
+                    }
+                    if(c==obj.length)
+                    {
+                        $('.header input').eq(0).get(0).checked = true;
+                        $('.header input').addClass('Check_Box_Selected');
+                    }
+                    else 
+                    {
+                        $('.header input').eq(0).get(0).checked = false;
+                        $('.header input').removeClass('Check_Box_Selected');
+                    }
+                    });
+                    
+                $('.Spin_Sub_Controls').click(function(e){
+                        var index = $('.Spin_Sub_Controls').index($(this)[0]);
+                        var number = $('.Spin_TextArea').eq(index).val();
+                        var price =parseFloat( $('.price').eq(index).html().substring(1));
+                        if(number==0)number=0;
+                        else number--;
+                        $('.Spin_TextArea').eq(index).val(number);
+                        $('.cost').eq(index).html('￥&nbsp;'+(number*price).toString());
+                        });
+                        
+                $('.Spin_Plus_Controls').click(function(e){
+                        var index = $('.Spin_Plus_Controls').index($(this)[0]);
+                        var number = $('.Spin_TextArea').eq(index).val();
+                        var price =parseFloat( $('.price').eq(index).html().substring(1));
+                        number++;
+                        $('.Spin_TextArea').eq(index).val(number);
+                        $('.cost').eq(index).html('￥&nbsp;'+(number*price).toString());
+                        });
+                        
+                $('.login').click(function(e) {
+                    $('.theme-popover').FixedPop();
+                    $('#CoverShell').PopUpHideShell();
+                });
+                
+                $('.search').click(function(e) {
+                    $('.search-popover').FixedPop();
+                    $('#CoverShell').PopUpHideShell();
+                });
+                
+                $('.head_close').click(function(e) {
+                    $('.theme-popover').ClosePop();
+                     $('.search-popover').CloseHide();
+                    $('#CoverShell').CloseHide();
+                });
+                
+            });
+        </script>
+
+
+   <SCRIPT LANGUAGE="JavaScript" src=http://float2006.tq.cn/floatcard?adminid=9747713&sort=2 ></SCRIPT>
+   </body>
+</html>

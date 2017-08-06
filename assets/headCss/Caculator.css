@@ -1,0 +1,439 @@
+@charset "utf-8";
+           
+           
+            #Main_Page li
+            {
+                border: 1px solid #ACA7A6;
+            }
+             #Main_Page ul li span
+            {
+                font-size:14px;
+            }
+            
+            #Main_Page .header,#Main_Page .items
+            {
+                padding:14px 0px;
+                padding-left:22px;
+                background:#F8F6F5;
+            }
+            
+            #Main_Page .items
+            {
+                padding-top: 0px;
+                padding-bottom:0px;
+                border-top:none;
+                background:#FFF;
+                
+                
+            }
+            
+            
+           #Main_Page .header div,#Main_Page .items div
+            {
+                
+                font-size:14px;
+                display:inline-block;
+            }
+            
+            #Main_Page .items div
+            {
+                height:60px;
+            }
+            
+            
+            
+            
+             
+              
+              #Main_Page ul li.items .d01div
+              {
+                  position:relative;
+              }
+              
+             
+            
+            @media only screen and (max-width:1990px)
+            {
+                #Main_Page{width:74%;}
+                #Main_Page ul li.header .d01div,#Main_Page ul li.items .d01div{width:10%;}
+                #Main_Page ul li.header .d02div,#Main_Page ul li.items .d02div{width:42%;}
+                #Main_Page ul li.header .d03div,#Main_Page ul li.items .d03div{width:15%;}
+                #Main_Page ul li.header .d04div,#Main_Page ul li.items .d04div{width:15%;}
+                #Main_Page ul li.header .d05div,#Main_Page ul li.items .d05div{width:15%;}
+                
+            }
+            
+            @media only screen and (max-width:1024px)
+            {
+                #Main_Page{width:84%;}
+            
+            }
+            
+            @media only screen and (max-width:750px)
+             {
+                #Main_Page{width:88%;}
+                #Main_Page ul li.header .d01div,#Main_Page ul li.items .d01div{width:20%;}
+                #Main_Page ul li.header .d02div,#Main_Page ul li.items .d02div{width:42%; display:none;}
+                #Main_Page ul li.header .d03div,#Main_Page ul li.items .d03div{width:25%;}
+                #Main_Page ul li.header .d04div,#Main_Page ul li.items .d04div{width:25%;}
+                #Main_Page ul li.header .d05div,#Main_Page ul li.items .d05div{width:20%;}
+            
+             }
+            
+             @media only screen and (max-width:480px)
+             {
+                #Main_Page{width:92%;}
+                #Main_Page ul li.header .d01div,#Main_Page ul li.items .d01div{width:20%;}
+                #Main_Page ul li.header .d02div,#Main_Page ul li.items .d02div{width:0%; display:none;}
+                #Main_Page ul li.header .d03div,#Main_Page ul li.items .d03div{width:10%; }
+                #Main_Page ul li.header .d04div,#Main_Page ul li.items .d04div{width:30%;}
+                #Main_Page ul li.header .d05div,#Main_Page ul li.items .d05div{width:20%;}
+                
+                
+             }
+             
+             #Main_Page ul li.items .d02div span
+             {
+                 height:60px;
+             }
+             
+            
+             
+             #recommend a
+             {
+                 display:inline-block;
+                 width:60px;
+                 height:60px;
+                 margin-top:17px;
+                 margin-right:20px;
+                 margin-bottom:17px;
+             }
+             
+             #recommend a img
+             {
+                 width:100%;
+                 height:100%;
+                
+             }
+             
+            
+            #Main_Page li img
+            {
+                display:inline-block;
+                float:left;
+                height:60px;
+                width:60px;
+                margin:2px 0px;
+                position:absolute;
+                top:30%;
+                
+            }
+            
+            #CoverShell
+            {
+                width:100%; 
+                display:none; 
+                height:100%; 
+                position:absolute; 
+                z-index:1000; 
+                top:0px;
+                background:url(images/cvbk.png) repeat;
+                /* ONLY FOR BROWSEER SUPPORT CSS3 */ 
+                background:rgba(0,0,0,.4);
+            }
+            .block_frame
+             {
+                 width:100%;
+                 border:1px solid #ACA7A6;
+                 margin-top:12px;
+             }
+             #Main_Page .ad_list li
+             {
+                 border:none;
+                  margin-top:12px;
+                  position:relative;
+                  
+             }
+             
+             #Main_Page .inputbox
+             {
+                
+                 padding:2px 0px;
+                 position:relative;
+                 width:80%;
+                 
+                 
+             }
+             
+             #Main_Page .inputbox span
+             {
+                 display:inline-block;
+                 height:13px;
+                 line-height:13px;
+                 font-size:12px;
+                 line-height:13px;
+                 margin-top:0px;
+                 position:absolute;
+                 top:0px;
+                 margin-left:10px;
+                
+             }
+             
+             .sendFrame
+             {
+                 border:1px solid #ACA7A6;
+                 width:172px;
+                 height:30px;
+                 margin-top:12px;
+                 display:inline-block;
+                 margin-right:30px;
+                 line-height:30px;
+                 text-align:center;
+                 cursor:pointer;
+             }
+             
+             .Frame_Cols
+             {
+                 border-color:#E3CDBA;
+             }
+             
+            
+            .Count_area
+            {
+                width:100%;
+                display:block;
+                position:relative;
+                top:40px;
+            }
+            @media only screen and (max-width:1990px){
+             
+             .using-button
+             {
+                 float:left; margin-top:8px; 
+                 margin-left:8px; height:25px; background:#eeeceb; padding:0px 20px; line-height:25px;
+                 cursor:pointer;
+                 font-size:12px;
+             }
+             
+             .Out_Box_Container
+             {
+                 float:left;height:25px; margin-top:8px; margin-left:8px; display:inline-block;
+             }
+             
+             .p-R
+             {
+                 font-size:12px; margin-top:20px;
+             }
+             .p-R span
+             {
+                 width:67px; 
+                 text-align:right; 
+                 display:inline-block;
+                 float:right;
+             }
+             
+             .Text_Ra_Full
+             {
+                 float:left;
+             }
+            }
+            
+            @media only screen and (max-width:750px){
+             
+             .using-button
+             {
+                  margin-top:8px; margin-left:8px; height:25px; background:#eeeceb;
+                  text-align:center;
+                  padding:0px;
+                  line-height:25px;
+                  font-size:12px;
+                  float:none;
+                  display:block;
+                  width:50px;
+                  cursor:pointer;
+             }
+             
+             .Text_Ra_Full
+             {
+                 float:none;
+             }
+             
+             .Out_Box_Container
+             {
+                 float:none;height:25px; margin-top:8px; margin-left:8px; display:inline-block;
+             }
+             
+             .p-R
+             {
+                 font-size:12px; margin-top:20px;
+             }
+             .p-R span
+             {
+                 width:100px; text-align:right; display:inline-block;
+                 float:right;
+             }
+            }
+            
+            #LastBox
+            {
+                width:100%; border:2px solid #DBC0A1; padding:32px 34px; text-align:right; font-size:12px;
+                margin-top:24px;
+                margin-bottom:150px;
+            }
+            
+            #LastBox p
+            {
+                display:block;
+                margin-top:10px;
+            }
+            #Main_Page *{
+                color:#5F5958;
+            }
+            .returnCar{
+                width:110px; 
+                height:34px; 
+                text-align:center; 
+                line-height:35px; 
+                font-size:14px; 
+                border-radius:2px; 
+                
+                padding-left:10px;
+                float:right; 
+                margin-right:14px; 
+                margin-top:18px; 
+                cursor:pointer;    
+                background:url(../../images/back-arrow.png) 13px center no-repeat rgb(208,206,205); 
+            }
+            .returnCar:hover{
+                background:url(../../images/back-arrow.png) 13px center no-repeat rgb(180,180,180);
+            }
+            .submitOrder{
+                width:94px; 
+                display:inline-block; 
+                height:34px; 
+                text-align:center; 
+                line-height:35px; 
+                font-size:14px;
+                border-radius:2px; 
+
+                float:right; 
+                margin-top:18px; 
+
+                cursor:pointer;
+                background:rgb(75,69,68);
+            }
+            .submitOrder:hover{
+                background:#5f5958;
+                color:#FFF;
+            }
+            a {
+                color:#0088DB;
+                text-decoration:none;
+                cursor:pointer
+            }
+            a:hover {
+                color:#2A5E8E
+            }
+            a{color:#5f5859;}
+
+
+
+
+
+            #Main_Page{
+                margin:0px auto; 
+                height:auto; 
+                padding-top:110px;
+            }
+            #noclear01{
+                width:100%; 
+                background:#EEECEB; 
+                text-align:center; 
+                font-size:18px; 
+                height:50px; 
+                line-height:50px; 
+                border-radius:1px; 
+                color:#5F5958;
+            }
+            #noclear02{
+                margin-top:16px; 
+                font-size:12px;
+            }
+
+            #noclear03{
+                padding:16px 0px; 
+                padding-left:20px; 
+                position:relative;
+            }
+            .ad_list{
+                display:block; 
+                margin-left:90px;
+                position:relative; 
+                top:-12px;
+            }
+            .noclear04{
+                display:inline-block;
+                width:20%; 
+                position:absolute; 
+                right:0px; 
+                top:0px;
+            }
+            #SendType{
+                margin-top:16px; 
+                font-size:12px;
+            }
+            .nm_sub{
+                border-top-left-radius:2px; 
+                border-bottom-left-radius:2px;
+            }
+            .items .Count_area .nm_val{
+                border-left:none; 
+                border-right:none;
+                width:36px; 
+                background:#fff; 
+                text-align:center;
+            }
+            .nm_plus{
+                margin-right:8px; 
+                border-top-right-radius:2px; 
+                border-bottom-right-radius:2px;
+            }
+            #noclear05,#noclear06,#noclear07{
+                border:none; 
+                background:#ACA7A6; 
+                height:1px; 
+                width:100%; 
+                margin-top:12px;
+            }
+            #noclear08{
+                font-size:14px; 
+                text-align:right;
+            }
+            .submitOrder a{
+                color:#EEECEB;
+            }
+@media screen and (max-width:700px)
+{
+			#Main_Page .inputbox
+             {
+                
+                 padding:20px 0px;
+                 position:relative;
+                 width:80%;
+                 
+                 
+             }
+             
+             #Main_Page .inputbox span
+             {
+                 display:inline-block;
+                 height:40px;
+                 
+                 font-size:12px;
+                 margin-top:0px;
+                 position:absolute;
+                 top:0px;
+                 margin-left:10px;
+                
+             }
+}   

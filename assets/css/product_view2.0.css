@@ -1,0 +1,819 @@
+@charset "utf-8";
+/* CSS Document */
+ul{ list-style:none;}
+html
+{
+	overflow:auto;
+}
+
+input
+{
+	outline:none;
+}
+
+#head #LogoFiled
+{
+	display:block;
+}
+@media screen and (max-width:1920px)
+{
+
+	#cframe
+	{
+		padding:0 3%;
+		width:80%;
+		height:auto;
+		/*71px + n*/
+		padding-top:110px;
+		position:relative;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+
+
+	#ImagePart{ 
+		display:block; 
+		position:relative;
+		left:11%;
+
+	}
+	#TextPart{
+		display:block; 
+		position:absolute;
+		top:95px;
+		right: -24%;
+		width: 200px;
+	}
+
+	#dpaper
+	{
+		width:100%;
+		height:auto;
+	}
+
+	#dpaper li img
+	{
+
+		height:auto;
+		width:100%;
+		display:block;
+	}
+
+
+  #TextPart
+  {
+	padding-left:25px;
+  }
+	
+  #ImgBox a
+  {
+	display:block;
+	width:23px;
+	height:50px;
+	position:absolute;
+	z-index:999;
+	cursor:pointer;
+	top:46%;
+  }
+
+  #ImgBox #Next
+  {
+	background:url(../../images/next.png) no-repeat center;
+	right:3%;
+  }
+
+  #ImgBox #Prev
+  {
+	background:url(../../images/prev.png) no-repeat center;
+	left:3%;
+  }
+
+
+	#ImgBox #dot
+	{
+		margin:0 auto;
+		display:inline-block;
+		bottom:10px;
+		width:auto;
+		left:45%;
+	}
+
+	#dot li{position:static;float:left; margin:0 4px; display:inline-block;}
+
+	#ImgBox #dot li a
+	{
+		display:block;
+		width:10px;
+		height:10px;
+		position:static;
+		background:url(../../images/A.png) repeat;
+		border-radius:50%;
+	}
+
+	#ImgBox #dot li .seled
+	{
+		background-image:url(../../images/currentA.png);
+	}
+
+	#ImgBox
+	{
+		width:750px;
+		height:750px;
+		overflow:hidden;
+		position:relative;
+	}
+
+	#ImageLoop
+	{
+		width:10000px;
+		height:100%;
+		position:absolute;
+		
+	}
+
+	#ImageLoop li
+	{
+		float:left;
+	}
+
+	#ImageLoop img
+	{
+		max-width:750px;
+		height:auto;
+		display:block;
+	}
+}
+/*
+@media screen and (max-width:1024px)
+{
+	#TextPart
+	{
+		margin-top:10px;
+		padding-left:0;
+	}
+}
+*/
+#TextPart *
+{
+	color:#5f5958;
+}
+
+#TextPart h2
+{
+	font-weight:normal;
+	font-family:"方正细圆简体","宋体","arial";
+	font-size:24px;
+}
+
+#TextPart hr
+{
+
+	border:none;
+	width:100%;
+
+	margin-top:15px;
+
+	border:none;
+	background-color:#C1C1C1;
+	height:1px;
+	width: 410px;
+}
+
+#TextPart ul li
+{
+	font-family:"方正细圆简体","宋体","arial";
+	font-size:12px;
+}
+
+#TextPart ul .li_title
+{
+	background:url(../../images/dot1.png) no-repeat left center;
+	padding-left:10px;
+	font-size:12px;
+	margin:15px 0px;
+	margin-bottom:8px;
+	width:400px;
+}
+
+#TextPart ul .li_sp_title
+{
+	height:30px;
+	line-height:30px;
+	display:inline-block;
+	font-family:"方正细圆简体","宋体","arial";
+	font-size:12px;
+
+	
+}
+
+#TextPart ul .li_title a
+{
+	cursor:pointer;
+	width:18px;
+	height:18px;
+	display:inline-block;
+	position:relative;
+	top:5px;
+	margin-left:10px;
+	border:1px solid #ACA7A6;
+	font-family:"方正细圆简体","宋体","arial";
+	line-height:18px;
+}
+
+
+#TextPart ul #mat a,#TextPart ul #size a
+{
+	width:auto;
+	padding:0 8px;
+	top:0;
+}
+#TextPart ul .li_text
+{
+	display:block;
+	line-height:20px;
+	font-size:12px;
+	width:410px;
+}
+
+#TextPart ul #address
+{
+	width:180px;
+	border-radius:2px;
+	background:url(../../images/icon_show.png) no-repeat 164px center;
+	top:0;
+	left:0;
+	margin:0;
+}
+
+#TextPart ul #address input
+{
+	border:none;
+	background:#fff;
+	font-family:"方正细圆简体","宋体","arial";
+	width:158px;
+	position:absolute;
+	display:block;
+	border-right:1px solid #ACA7A6;
+	height:100%;
+	font-size:12px;
+	
+}
+
+#TextPart ul #address_contianer
+{
+	border:none;
+	width:180px;
+	display:inline-block;
+	background:none;
+	position:relative;
+	padding:0;
+	top:5px;
+	height:20px;
+	margin-left:4px;
+}
+
+#TextPart ul  #addr_list
+{
+	width:100%;
+	position:absolute;
+	background:#fff;
+	height:160px;
+	border:1px solid #ACA7A6;
+	border-top:none;
+	left:0px;
+	top:18px;
+	display:none;
+	overflow:hidden;
+}
+
+#TextPart #address.clk,#TextPart #kuaidi_charge.clk
+{
+	background-image:url(../../images/icon_prv.png);
+}
+
+#TextPart #kuaidi_charge
+{
+	width:110px;
+	background:url(../../images/icon_show.png) no-repeat  96px center;
+	border-radius:2px;
+	border-color:#ACA7A6;
+}
+
+#TextPart #kuaidi_charge input
+{
+	border:none;
+	background:#fff;
+	font-family:"方正细圆简体","宋体","arial";
+	width:90px;
+	position:absolute;
+	display:block;
+	border-right:1px solid #ACA7A6;
+	height:100%;
+	font-size:12px;
+
+}
+
+
+#TextPart #kuaidi_charge ul
+{
+	width:100%;
+	position:absolute;
+	top:18px;
+	border:1px solid #ACA7A6;
+	left:-1px;
+	background:#fff;
+	border-top:none;
+	display:none;
+}
+
+#TextPart #addr_list
+{
+	z-index:100;
+}
+
+#TextPart #addr_list li
+{
+	width:60px;
+	display:inline-block;
+	float:left;
+	text-align:center;
+	border:1px solid #ACA7A6;
+	background:#FFF;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	height:20px;
+	line-height:20px;
+	cursor:pointer;
+	font-family:"黑体","宋体";
+}
+
+#TextPart #addr_list #citydata
+{
+	display:block;
+	width:100%;
+	border:none;
+	height:140px;
+	overflow-y:scroll;
+}
+
+#TextPart #addr_list .opsel
+{
+	background:#EFECE6;
+	color:#5F5958;
+}
+
+#TextPart #addr_list .ms_list
+{
+	width:56px;
+	padding-left:20px;
+	text-align:left;
+	display:inline-block;
+	float:left;
+}
+
+#TextPart #price 
+{
+	font-size:24px;
+	padding:30px 0;
+}
+
+#TextPart #buttons input
+{
+	width:100px;
+	height:30px;
+	border:none;
+	background:#EFE7E6;
+	border:none;
+	-webkit-appearance:none;
+	appearance:none;
+	border-radius:4px;
+	cursor:pointer;
+	font-family:"微软雅黑","黑体","宋体";
+}
+
+#TextPart #buttons input:nth-child(1){ background:#EEE0D0; color:#5F5958;}
+#TextPart #buttons input:nth-child(1):hover{ background:#DBBD9B; color:#444444;}
+#TextPart #buttons input:nth-child(2){ background:rgb(75,69,68); color:#EEECEB; margin-left:10px;}
+#TextPart #buttons input:nth-child(2):hover{ background:#5f5958; color:#FFF;}
+#TextPart #buttons input:nth-child(3){ background:rgb(208,206,205); color:#5F5958; margin-left:10px;}
+#TextPart #buttons input:nth-child(3):hover{ background:rgb(180,180,180); color:#444;}
+
+#TextPart #_box_outside
+{
+	position:relative;
+	display:inline-block;
+	height:30px;
+	width:82px;
+	overflow:hidden;
+}
+
+#TextPart #_box_outside #subcal
+{
+	display:block;
+	height:30px;
+	width:20px;
+	border:1px solid #ACA7A6;
+	border-right:none;
+	-webkit-appearance:none;
+	appearance:none;
+	background:#E1E1E1;
+	float:left;
+	cursor:pointer;
+}
+
+
+#TextPart #_box_outside #addcal
+{
+	display:block;
+	height:30px;
+	width:20px;
+	border:1px solid #ACA7A6;
+	border-left:none;
+	-webkit-appearance:none;
+	appearance:none;
+	float:left;
+	cursor:pointer;
+	background:#E1E1E1;
+	
+}
+
+
+#TextPart #_box_outside #textcal
+{
+	display:block;
+	height:28px;
+	width:40px;
+	border:1px solid #ACA7A6;
+	border-right:none;
+	border-left:none;
+	-webkit-appearance:none;
+	appearance:none;
+	float:left;
+	text-align:center;
+}
+
+#TextPart ul .li_title a.selcolor2
+{
+	border:2px solid #DBBD9B;
+
+}
+#TextPart hr:first-child{
+	margin-bottom: 18px;
+}
+/*移动端***********************************************************************/
+/*移动端***********************************************************************/
+/*移动端***********************************************************************/
+@media screen and (min-width:250px) and (max-width:321px)
+{
+	#ImgBox #Next{
+		background-size:11px 25px;
+    }
+	#ImgBox #Prev{
+		background-size:11px 25px;
+    }
+	#ImagePart{
+		position:relative;
+		left:-23px;
+		width: 200px;
+	}
+	#TextPart{
+		left:-38px;
+		top: 48.5%;
+		height: auto;
+	}
+	#TextPart ul .li_text
+	{
+	    display:block;
+	    line-height:20px;
+	    font-size:12px;
+	    width:300px;
+	}
+	#TextPart hr
+	{
+	    border:none;
+	    width:100%;
+	    margin-top:15px;
+	    border:none;
+	    background-color:#C1C1C1;
+	    height:1px;
+	    width: 300px;
+	}
+	#dpaper li:nth-child(3){
+		width: 200px;
+		height: 1100px;
+	}
+	#TextPart #buttons input{
+		padding:0;
+		margin: 0;
+		width:80px;
+		height:25px;
+	}
+}
+@media screen and (min-width:322px) and (max-width:376px)
+{
+	#ImgBox #Next{
+		background-size:11px 25px;
+    }
+	#ImgBox #Prev{
+		background-size:11px 25px;
+    }
+	#ImagePart{
+		position:relative;
+		left:-30px;
+		width: 200px;
+	}
+	#TextPart{
+		left:-42px;
+		top: 53.5%;
+		height: auto;
+	}
+	#TextPart ul .li_text
+	{
+	    display:block;
+	    line-height:20px;
+	    font-size:12px;
+	    width:350px;
+	}
+	#TextPart hr
+	{
+	    border:none;
+	    width:100%;
+	    margin-top:15px;
+	    border:none;
+	    background-color:#C1C1C1;
+	    height:1px;
+	    width: 350px;
+	}
+	#dpaper li:nth-child(3){
+		width: 200px;
+		height: 1020px;
+	}
+}
+@media screen and (min-width:377px) and (max-width:415px)
+{
+	#ImgBox #Next{
+		background-size:11px 25px;
+    }
+	#ImgBox #Prev{
+		background-size:11px 25px;
+    }
+	#ImagePart{
+		position:relative;
+		left:-30px;
+		width: 200px;
+	}
+	#TextPart{
+		left:-42px;
+		top: 56%;
+		height: auto;
+	}
+	#TextPart ul .li_text
+	{
+	    display:block;
+	    line-height:20px;
+	    font-size:12px;
+	    width:385px;
+	}
+	#TextPart hr
+	{
+	    border:none;
+	    width:100%;
+	    margin-top:15px;
+	    border:none;
+	    background-color:#C1C1C1;
+	    height:1px;
+	    width: 385px;
+	}
+	#dpaper li:nth-child(3){
+		width: 200px;
+		height: 1020px;
+	}
+}
+@media screen and (min-width:416px) and (max-width:769px)
+{
+	#ImagePart{
+		position:relative;
+		left:-55px;
+		width: 200px;
+	}
+	#TextPart{
+		left:-55px;
+		top: 72%;
+		height: auto;
+	}
+	#TextPart ul .li_text
+	{
+	    display:block;
+	    line-height:20px;
+	    font-size:12px;
+	    width:700px;
+	}
+	#TextPart hr
+	{
+	    border:none;
+	    width:100%;
+	    margin-top:15px;
+	    border:none;
+	    background-color:#C1C1C1;
+	    height:1px;
+	    width: 720px;
+	}
+	#dpaper li:nth-child(3){
+		width: 200px;
+		height: 900px;
+	}
+}
+/*pc端***********************************************************************/
+/*pc端***********************************************************************/
+/*pc端***********************************************************************/
+/*pc端***********************************************************************/
+@media screen and (min-width:770px) and (max-width:1025px)
+{
+	#cframe{
+		padding:0 3%;
+		width:60%;
+		height:auto;
+		/*71px + n*/
+		padding-top:110px;
+		position:relative;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+	#ImagePart{
+		position:relative;
+		left: -10%;
+
+	}
+	#TextPart{
+		left:56%;
+		top: 7.5%;
+	}
+	#ImgBox
+	{
+	    width:400px;
+	    height:400px;
+	    overflow:hidden;
+	    position:relative;
+	}
+	#ImageLoop img
+	{
+	    max-width:400px;
+	    height:auto;
+	    display:block;
+	}
+	#TextPart ul .li_text
+	{
+	    display:block;
+	    line-height:20px;
+	    font-size:12px;
+	    width:350px;
+	}
+	#TextPart hr
+	{
+	    border:none;
+	    width:100%;
+	    margin-top:15px;
+	    border:none;
+	    background-color:#C1C1C1;
+	    height:1px;
+	    width: 350px;
+	}
+	#dpaper{
+		width: 400px;
+	}
+}
+@media screen and (min-width:1026px) and (max-width:1281px)
+{
+	#cframe{
+		padding:0 3%;
+		width:70%;
+		height:auto;
+		/*71px + n*/
+		padding-top:110px;
+		position:relative;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+	#ImagePart{
+		position:relative;
+		left: -8%;
+
+	}
+	#TextPart{
+		right: -5%;
+		top: 5%;
+
+	}
+	#ImgBox
+	{
+	    width:600px;
+	    height:600px;
+	    overflow:hidden;
+	    position:relative;
+	}
+	#ImageLoop img
+	{
+	    max-width:600px;
+	    height:auto;
+	    display:block;
+	}
+	#TextPart ul .li_text
+	{
+	    display:block;
+	    line-height:20px;
+	    font-size:12px;
+	    width:410px;
+	}
+	#TextPart hr
+	{
+
+	    border:none;
+	    width:100%;
+
+	    margin-top:15px;
+
+	    border:none;
+	    background-color:#C1C1C1;
+	    height:1px;
+	    width: 410px;
+	}
+	#dpaper{
+		width: 600px;
+
+	}
+}
+@media screen and (min-width:1282px) and (max-width:1361px)
+{   
+	#cframe{
+		padding:0 3%;
+		width:75%;
+		height:auto;
+		/*71px + n*/
+		padding-top:110px;
+		position:relative;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+	#ImagePart{
+		position:relative;
+		left: -8%;
+
+	}
+	#TextPart{
+		right: -12%;
+
+	}
+}
+@media screen and (min-width:1362px) and (max-width:1449px)
+{
+	#cframe{
+		padding:0 3%;
+		width:75%;
+		height:auto;
+		/*71px + n*/
+		padding-top:110px;
+		position:relative;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+	#ImagePart{
+		position:relative;
+		left: -5%;
+
+	}
+	#TextPart{
+		right: -15%;
+
+	}
+}   
+@media screen and (min-width:1450px) and (max-width:1681px)
+{
+	#cframe{
+		padding:0 3%;
+		width:75%;
+		height:auto;
+		/*71px + n*/
+		padding-top:110px;
+		position:relative;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+	#ImagePart{
+		position:relative;
+		left: 0%;
+
+	}
+	#TextPart{
+		right: -20%;
+
+	}
+
+	
+}

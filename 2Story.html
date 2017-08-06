@@ -1,0 +1,344 @@
+﻿<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta http-equiv="Cache-Control" content="no-transform" /> 
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes" />
+       <link href="assets/css/index2.0.css" rel="stylesheet">
+       <link href="assets/css/product2.0.css" rel="stylesheet">
+       <link href="assets/css/mediascreen.css" rel="stylesheet">
+       <link href="assets/css/beautifulRoom2.css" rel="stylesheet">
+       <link href="assets/css/2story.css" rel="stylesheet">
+       <title>品牌故事</title>
+       <script src="fullpage/js/jquery-1.8.3.min.js"></script>
+       <script src="assets/js/Menu.js"></script>
+       <script src="assets/js/LoginBox.js"></script>
+       <script src="assets/js/MenuList.js"></script>
+       <script>
+           window.onresize = function(e)
+            {
+            var l = parseInt($('#LeftPop').css('left'),10);
+            var r = parseInt($('#RightPop').css('right'),10);
+            if(l!=0)
+            $('#LeftPop').css('left',-parseInt($('#LeftPop').width(),10)+'px');
+            if(r!=0)
+            $('#RightPop').css('right',-parseInt($('#RightPop').width(),10)+'px');
+            
+            var h = parseInt($(window).height(),10);
+            h-=70;
+            $('#adjust').css('height',h+'px');
+            
+            
+        }
+
+        $(document).ready(function(e) {
+            
+            
+            var h = parseInt($(window).height(),10);
+            h-=70;
+            $('#adjust').css('height',h+'px');
+            
+            $('.Login,#Login').click(function(e) {
+                $('#LoginBox').fadeBoxIn(600);
+                $('.Shell_box').eq(1).fadeIn(600);
+            });
+            
+            $('.Bag').click(function(e) {
+               $('#RightPop').RMenu();
+            });
+            
+            $('#LoginClose').click(function(e) {
+                $('#LoginBox').fadeBoxOut(600);
+                $('.Shell_box').eq(1).fadeOut(600);;
+            });
+            
+            $('.Search,#Search').click(function(e) {
+                $('#SearchBox').fadeBoxIn(600);
+                $('.Shell_box').eq(1).fadeIn(600);
+            });
+            
+            $('#SearchClose').click(function(e) {
+                $('#SearchBox').fadeBoxOut(600);
+                $('.Shell_box').eq(1).fadeOut(600);
+            });
+            
+
+        });
+        </script>
+        <script src="assets/js/main.js"></script>     
+	 	<script src="assets/js/hide.js"></script>
+    </head>
+    <body class="landing">
+     
+          
+	
+<div id="goToTop">
+  <div class="animate-bounce-up"></div>
+  <a id="backtop" href="#H3"><img src="images/top_line.png"/></a>
+</div>
+
+<div class="Shell_box"></div>
+<div class="Shell_box" style="z-index:1020;"></div>
+
+<!--登陆框-->
+<div id="LoginBox">
+  <div id="first_box">
+    <img id="LoginClose" src="images/close_1.png" onMouseOver="javascript:$(this).get(0).src='images/close_2.png';" onMouseOut="javascript:$(this).get(0).src='images/close_1.png';">
+    <img src="images/login_logo.png" id="Llogo"><span class="welcome">|&nbsp;&nbsp;小面包欢迎回来</span>
+  </div>
+  <div id="second_box">
+    <div id="QRCode">
+    <img src="images/login_er.png">
+    <p style="color:#5e5857; margin-top:4px;font-size:15px;">请使用微信扫一扫一键登录</p>
+    <p style="font-size:12px;color:#aca7a6; margin:12px auto;">关注并绑定牛奶面包公众服务号，获取订单实时状态及家居潮流趋势。</p>
+    </div>
+  </div>
+  <div id="last_box" style="text-align:center;overflow:hidden;"><img src="images/logo_footer.png" style=" display:block; margin:24px auto;"></div>
+</div>
+
+<div id="SearchBox">
+<input type="text"  id="stext" value="请输入关键词" onFocus="javascript:if(this.value=='请输入关键词')this.value='';" onBlur="javascript:if(this.value==''||this.value==null)this.value='请输入关键词';">
+<img id="SearchIcon" src="images/search_1.png">
+<img id="SearchClose" src="images/close_1.png" onMouseOver="javascript:$(this).get(0).src='images/close_2.png';" onMouseOut="javascript:$(this).get(0).src='images/close_1.png';">
+</div>
+
+<div id="head">
+  <div id="Black" style=" position:absolute; background:rgb(0,0,0); width:100%; height:70px;left:0;"></div>
+  <div id="LogoFiled" style="height:70px; line-height:70px;">
+    <a href="Index.html"><img  style="height:18px; line-height:18px; display:block; margin-top:26px;" src="assets/css/images/header_logo.svg" ></a>
+  </div>
+  <div><a href="#" id="Menu" onClick="javascript:$('#LeftPop').LMenu();">Menu</a></div>
+  <!--<div style="text-align:center;border:1px solid red;">&nbsp;</div>-->
+  <div style="text-align:right; overflow:hidden;right:-31%;">
+  <a class="NaN Login" href="#"><span>Login</span></a><a class="NaN Order" href="Orders.html"><span>Orders(1)</span></a><a class="NaN Fav" href="Collection.html"><span>Favorites</span></a><!--
+--><a class="NaN Bag" href="#"><span>Bag(40)</span></a><!--
+--><a class="NaN Search" href="#"><span>Search</span></a>
+  </div>
+</div>
+
+
+<div id="RightPop">
+   <img src="assets/css/images/close.svg" id="MenuClose" onClick="javascript:$('#RightPop').RMenu();">
+   <div id="Rm" style="width:264px; margin-bottom:40px; font-size:14px; margin-top:26px; color:#fff;">Bag</div>
+   <ul id="shopping_car">
+     <li class="first_p">
+       <a href="#">
+         <img src="images/list1.png">
+         <div class="carcp">
+           <span>名称:花瓶</span>
+           <span style="margin-top:12px;">数量:10</span>
+           <span style="margin-top:12px;">价格:1200</span>
+         </div>
+       </a>
+     </li>
+     <li>
+       <a href="#">
+         <img src="images/list1.png">
+         <div class="carcp">
+           <span>名称:花瓶</span>
+           <span style="margin-top:12px;">数量:10</span>
+           <span style="margin-top:12px;">价格:1200</span>
+         </div>
+       </a>
+     </li>
+     <li>
+       <a href="#">
+         <img src="images/list1.png">
+         <div class="carcp">
+           <span>名称:花瓶</span>
+           <span style="margin-top:12px;">数量:10</span>
+           <span style="margin-top:12px;">价格:1200</span>
+         </div>
+       </a>
+     </li>
+     <li class="filed"><a href="#" id="goto">前往购物车</a></li>
+   </ul>
+   
+   <ul id="pc_hidden">
+     <li><a href="#" style="background:url(images/login1.png) no-repeat left center;" id="Login" >Login</a></li>
+     <li><a href="#" style="background:url(images/order.png) no-repeat left center;">Orders(1)</a></li>
+     <li><a href="#" style="background:url(images/shoucang1.png) no-repeat left center;" >Favorites</a></li>
+     <li><a href="#" style="background:url(images/search1.png) no-repeat left center;" id="Search" >Search</a></li>
+     
+   </ul>
+   </div>
+
+
+<div id="LeftPop">
+  <img src="assets/css/images/close.svg" id="MenuClose" onClick="javascript:$('#LeftPop').LMenu();">
+  <div style="width:264px; margin-bottom:90px; font-size:14px; margin-top:-20px;">Menu</div>
+  <ul>
+    <li><a href="Index.html"><span class="en">Home</span><span class="ch">回到主页</span></a></li>
+    <li><a class="left_line">-</a></li>
+    <li><a href="BeautifulRoom.html"><span class="en">Beautifully Small House</span><span class="ch">美丽小居室</span></a></li>
+    <li><a href="#" class="left_line">-</a></li>
+    <li><a href="AllProduct_New.html"><span class="en">All Products</span><span class="ch">所有商品</span></a></li>
+    <li><a href="Classified.html"><span class="en">Classified Goods</span><span class="ch">分类商品</span></a></li>
+    <li><a href="NewestProduct.html"><span class="en">Newest Products</span><span class="ch">最新商品</span></a></li>
+    <li><a href="#" class="left_line">-</a></li>
+    <li><a href="2Story.html"><span class="en">Brand Story</span><span class="ch">品牌故事</span></a></li>
+    <li><a href="#" class="left_line">-</a></li>
+    <li><a href="#"><span class="en">Art into Life</span><span class="ch">艺心在延续</span></a></li>
+    <li><a href="#" class="left_line">-</a></li>
+    <li><a href="Index2.html"><span class="en">个人网站</span><span class="ch">个人网站</span></a></li>
+  </ul>
+</div>
+                
+            <!--中间部分-->
+             <!--主体部分-->
+             <style>
+			 
+            </style>
+            <div style=" margin:0px auto; height:auto; padding-top:110px; padding-bottom:150px; background:url(images/s-bk.jpg) top no-repeat; background-position:0px 120px;">
+            <div id="liner">
+             BRAND STORY
+              <div class="sub1"><span>品牌故事</span></div>
+            </div>
+            <ul id="lkb">
+              <li>
+                <div>ABOUT MILK&amp;BREAD</div>
+                <h3 style="margin-top:8px;">关于牛奶面包</h3>
+                <div class="textA">当心灵宁静下来，美就呈现出来了！</div>
+              </li>
+               <li style="margin-top:96px;">
+                
+                <h3 style="margin-top:8px;">梦想</h3>
+                <div class="textA">
+<span>年轻的时候，我总和自己说：面包会有，牛奶也会有；</span>
+<span>我也常和我深爱的人说：我们会有一个很酷的家！</span>
+<span>今天，我有了一个让朋友们都感觉很酷的家。</span>
+<span>其实每个年青人都在内心渴望拥有一个能让自己和朋友喊出“WOW”的家。</span>
+</div>
+              </li>
+              
+              <li style="margin-top:96px;">
+                
+                <h3 style="margin-top:8px;">理想</h3>
+                <div class="textA">
+<span>我们创立牛奶面包，</span>
+<span>邀请富有匠心精神的家居制造企业，精选他们的产品，以惊喜的价格，分享给大家。</span>
+<span>邀请热爱家居创意的年轻設计师来为我们做原创家具設计，分享给大家。</span>
+<span>希望以创新的家居設计和酷帅的空间陈列，分享给大家。</span>
+</div>
+              </li>
+              
+               <li style="margin-top:96px;">
+                
+                <h3 style="margin-top:8px;">信仰</h3>
+                <div class="textA">
+<span>我们信仰匠心精神，原创設计；</span>
+<span>我们信仰互联网能聚合最好的资源，</span>
+<span>我们信仰专业的极客精神，</span>
+<span>期待和懂生活的年青人一起创造“惊喜自己，能让朋友喊出‘WOW’”的家！</span>
+</div>
+              </li>
+      
+            </ul>
+            </div>
+            
+			<!-- 底部 -->
+
+<div class="bottom_section">
+    <div id="bottom">
+        <div id="navigation">
+        		<div class="bottom_nav">
+	              <ul>
+	                <li><a class="nav_first" href="2ContactUs.html">关于我们</a></li>
+	              </ul>
+	            </div>
+	            <div class="bottom_nav">
+	              <ul>
+	                <li><a class="nav_first" href="2Common_problem.html">购物指南</a></li>
+	              </ul>
+	            </div>
+	            <div class="bottom_nav">
+	              <ul>
+	                <li><a class="nav_first" href="2Associator.html">会员中心</a></li>
+	              </ul>
+	            </div>
+
+	            <div class="bottom_nav">
+	              <ul>
+	                <li><a class="nav_first" href="2Payment.html">支付方式</a></li>
+	              </ul>
+	            </div>
+	            <div class="bottom_nav">
+	              <ul>
+	                <li><a class="nav_first" href="2Logistical_fare.html">配送方式</a></li>
+	              </ul>
+	            </div>
+	            <div class="bottom_nav">
+	              <ul>
+	                <li><a class="nav_first" href="2Return_exchange.html">售后服务</a></li>
+	              </ul>
+	            </div>
+        </div>
+
+         <div id="bottom_text">
+           <p>在线客服</p>
+           <P class="online_service"><a href=""><IMG id="tq_kefu_main" version="20100823" style="background:transparent none repeat scroll 0% 0%;cursor:pointer" onclick="TQKF.kefuimg.Distrabute()" /></a></P>
+           <p class="service">客服电话</p>
+           <p class="tel">0574-88081153</p>
+         </div>
+   
+         <ul id="ul_image">
+            <li class="li_img"><img src="images/weibo.png"><a>官方微博</a></li> 
+            <li class="li_img"><img src="images/guanwang.png"><a>官方网站</a></li>
+            <li class="li_img"><img src="images/weixin_er.png"><a>官方微信</a></li>
+            
+        </ul>
+          
+    </div>
+    <div class="copyright">
+      <span style="color:#5E5C5C">copyright © 2015-2016 milk&bread</span>
+      <span style="color:#5E5C5C">All Rights Reserved.| 浙ICP备15000846号-1</span>
+    </div>
+  </div>
+
+    <script>
+      function pageScroll() { 
+                   window.scrollBy(0,-10); 
+                   scrolldelay = setTimeout('pageScroll()',500); 
+                   if($(document).scrollTop()==0) clearTimeout(scrolldelay); 
+          } 
+    </script>
+    <script>
+      window.onscroll=function()
+      {
+        if($(window).scrollTop()>=20)
+        $('#goToTop').addClass('see');
+        else 
+        $('#goToTop').removeClass('see');
+      }
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+        //首先将#back-to-top隐藏
+        $("#goToTop").hide();
+        //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
+        $(function () {
+          $(window).scroll(function(){
+        if ($(window).scrollTop()>30){
+          $("#goToTop").fadeIn(500);
+        }
+        else
+        {
+          $("#goToTop").fadeOut(500);
+        }
+        });
+        //当点击跳转链接后，回到页面顶部位置
+        $("#goToTop").click(function(){
+          $('body,html').animate({scrollTop:0},1000);
+          return false;
+        });
+        });
+        });
+    </script>
+
+  
+
+
+   <SCRIPT LANGUAGE="JavaScript" src=http://float2006.tq.cn/floatcard?adminid=9747713&sort=2 ></SCRIPT>
+</html>

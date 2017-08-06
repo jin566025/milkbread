@@ -1,0 +1,136 @@
+@font-face {
+    font-family:lanting;
+    src:url('../../fonts/兰亭纤黑%20GBK.TTF');
+}
+@font-face {
+    font-family: 'fangzhengxiyuan';
+    src:url('../../fonts/方正细圆简体.ttf') format('truetype'),
+        url('../../fonts/方正细圆简体.eot?#iefix') format('embedded-opentype')),
+        url('../../fonts/方正细圆简体.svg') format('svg')，
+        url('../../fonts/方正细圆简体.woff');
+
+}
+/*图片之间的标题 */
+                                                                                            /*The Happiness of Firmly*/
+    .img_text_title{
+        width: 100%;
+        position:absolute;
+        margin-top:75px;
+        text-align: center;
+        color: #ffffff;
+        line-height: 0pt;
+        letter-spacing: 0px;
+        list-style: none;
+    }
+    .img_text_title .img_text_a{
+        margin-top: -15px;
+
+    }
+    .img_text_title .img_text_a a{
+        padding: 10px 20px;
+        background-color:#000000;
+        color: #ffffff;
+        font-size: 13pt;
+        border-radius: 24px;
+        border: 1px solid rgba(255,255,255,0.25);
+        text-align: center;
+        font-family: 'Microsoft YaHei';
+    }
+        .img_text_title .img_text_a1{
+            margin-top: -15px;
+
+        }
+        .img_text_title .img_text_a1 a{
+            padding: 6px 14px;
+            background-color:#000000;
+            color: #ffffff;
+            font-size: 11pt;
+            border-radius: 24px;
+            border: 1px solid rgba(255,255,255,0.25);
+            text-align: center;
+            font-family: 'Microsoft YaHei';
+        }
+    .img_text_title .img_text_1{
+        font-size: 22pt;
+        font-family: AovelSans_0;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+        .img_text_title .img_text_4{
+            font-size: 20pt;
+            font-family: AovelSans_0;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+    .img_text_title .img_text_3{
+        font-size: 25pt;
+        font-family: AovelSans_0;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+    .img_text_title .img_text_a a:hover{
+        border: 1px solid #595757;
+        color:#ffffff;
+    }
+    .img_text_title ul li img{
+        margin-top: 5px;
+        width: 15px;
+    }
+    /*iPad横版*/
+    @media screen and (max-width:1024px) {
+        .img_text_title{
+            width: 100%;
+        }
+    }
+    @media screen and (max-width:960px) {
+        .img_text_title{
+            width: 100%;
+        }
+    }
+    /*iPad竖版*/
+    @media screen and (max-width:768px) {
+        .img_text_title {
+            width: 100%;
+        }
+    }
+    /*iPhone4 横版*/
+    @media screen and (max-width:480px) {
+        .img_text_title {
+            margin-left:780px ;
+            width: 360px;
+        }
+        .img_text_title .img_text_1{
+        }
+    }
+    /*iPhone6 Plus*/
+    @media screen and (max-width:414px) {
+        .img_text_title {
+            margin-left:780px ;
+            width: 360px;
+        }
+        .img_text_title .img_text_1{
+        }
+    }
+    /*iPhone 6*/
+    @media screen and (max-width:375px) {
+        .img_text_title {
+            margin-left:780px ;
+            width: 360px;
+        }
+        .img_text_title .img_text_1{
+            font-size: 30pt;
+        }
+    }
+    /*iPhone 4,iPhone 5*/
+    @media screen and (max-width:320px) {
+        .img_text_title {
+            margin-left:810px ;
+            width: 300px;
+        }
+        .img_text_title .img_text_1{
+            font-size: 30pt;
+        }
+    }

@@ -1,0 +1,10 @@
+.left_img img{ border:none;}
+.left_img ul li{ list-style:none;}
+.left_img .box{ width:750px; margin:0 auto; position:relative; height:470px; overflow:hidden;}
+.left_img .photoBox{ width:7500px; height:470px; position:absolute; left:-750px;}
+.left_img .photoBox img{ float:left;}
+.left_img .box .leftarrow{ position:absolute; top:50%; left:15px;}
+.left_img .box .rightarrow{ position:absolute; top:50%; right:15px;}
+.left_img .box ul{ position:absolute; bottom:15px; left:45%;}
+.left_img .box ul li{ float:left; margin-left:5px; background:url(../../../images/A.png); width:12px; height:12px;}
+.left_img .box ul .current{ background:url(../../../images/currentA.png);}

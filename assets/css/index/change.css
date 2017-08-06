@@ -1,0 +1,27 @@
+.change{
+    position: relative;
+    color:#FFFFFF;
+    z-index: 0;
+}
+.change .en{
+    font-family: AovelSans_0
+color:#FFFFFF;
+}
+.change:hover .en{
+    z-index: 99;
+    visibility: hidden;
+
+}
+.change .ch{
+    position: absolute;
+    /*left: -999em;*/
+    visibility: hidden;
+    font-family: FZY1JW_2
+}
+.change:hover .ch{
+    visibility: visible;
+    top: 2px;
+    left: 8px;
+    cursor: pointer;
+    color:#FFFFFF;
+}

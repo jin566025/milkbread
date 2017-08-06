@@ -1,0 +1,195 @@
+@charset "utf-8";
+span
+           {
+               -webkit-text-size-adjust:none;
+           }
+           
+        
+            
+            #Main_Page p
+            {
+                font-size:12px;
+                line-height:20px;
+                color:#7D7776;
+            }
+           
+           .Box_Button
+            {
+                position:relative;
+                height:24px;
+                display:inline-block;
+                width:180px;
+                margin-top:30px;
+                
+            }
+            
+            @media only screen and (max-width:1990px)
+            {
+                #Main_Page{width:74%;}
+                #Main_Page #title_text
+                {font-size:18px;}
+                .Box_Button
+                {
+                    width:194px;
+                }
+            }
+            
+            @media only screen and (max-width:1024px)
+            {
+                #Main_Page{width:82%;}
+                #Main_Page #title_text
+                {font-size:18px;}
+                .Box_Button
+                {
+                    width:194px;
+                }
+            
+            }
+            
+            @media only screen and (max-width:750px)
+             {
+                #Main_Page{width:88%;}
+                .Box_Button
+                {
+                    width:100%;
+                    overflow:hidden;
+                }
+                #Main_Page #title_text
+                {font-size:14px;}
+                
+            
+             }
+            
+             @media only screen and (max-width:480px)
+             {
+                #Main_Page{width:92%;}
+                .Box_Button
+                {
+                    width:100%;
+                    overflow:hidden;
+                }
+                #Main_Page #title_text
+                {font-size:12px;}
+                
+                
+             }
+             
+            
+            
+            .Box_Button input
+            {
+                position:absolute;
+                top:5px;
+                
+            }
+            
+            .Box_Button img
+            {
+                position:absolute;
+                left:21px;
+            }
+            
+            #Main_Page ul li
+            {
+                
+                width:100%;
+            }
+            
+            
+            #CoverShell
+            {
+                width:100%; 
+                display:none; 
+                height:100%; 
+                position:absolute; 
+                z-index:1000; 
+                top:0px;
+                background:url(images/cvbk.png) repeat;
+                /* ONLY FOR BROWSEER SUPPORT CSS3 */ 
+                background:rgba(0,0,0,.4);
+            }
+           
+            #Pay_Now
+            {
+                 background:#ACA7A6;color:#FFFEFE;
+            }
+            
+            #Pay_Now:hover
+            {
+                background:#5F5756;
+            }
+            @media only screen and (max-width:1990px){
+            #PopBox
+            {
+                width:504px;
+                height:272px;
+                border-radius:10px;
+                border:1px solid #ACA7A6;
+                position:absolute;
+                margin:0px auto;
+                top:0px; 
+                overflow:hidden;
+                background:#ACA7A6;
+                left:25%;
+            }
+            }
+            
+            @media only screen and (max-width:750px){
+            #PopBox
+            {
+                max-width:504px;
+                width:100%;
+                height:272px;
+                border-radius:2px;
+                border:1px solid #ACA7A6;
+                position:absolute;
+                margin:0px auto;
+                top:-1500px; 
+                overflow:hidden;
+                background:#ACA7A6;
+                left:5%;
+            }
+            }
+            
+             #PopBox
+             {
+                 float:left;
+                 top:130px;
+                 
+                 display:none;
+                 z-index:1000;
+             }
+            #PopBox div
+            {
+                padding:0px 26px;
+            }
+            
+            #Isee
+            {
+                width:94px;
+                height:30px;
+                padding:0px;
+                font-size:14px;
+                line-height:30px;
+                background:#ACA7A6;
+                color:#fff;
+                text-align:center;
+                border-radius:4px;
+                cursor:pointer;
+                
+                
+            }
+            
+            #Isee:hover
+            {
+                background:#5F5756;
+            }
+            a {
+                color:#0088DB;
+                text-decoration:none;
+                cursor:pointer
+            }
+            a:hover {
+                color:#2A5E8E
+            }
+            a{color:#5f5859;}

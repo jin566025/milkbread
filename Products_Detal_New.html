@@ -1,0 +1,449 @@
+﻿<!doctype html>
+<html>
+  <head>
+   <meta charset="utf-8">
+   <meta http-equiv="Cache-Control" content="no-transform" /> 
+   <meta http-equiv="Cache-Control" content="no-siteapp" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes" />
+   <link href="assets/css/index2.0.css" rel="stylesheet">
+   <link href="assets/css/beautifulRoom2.css" rel="stylesheet">
+   <link href="assets/css/product_view2.0.css" rel="stylesheet">
+   
+   <title>产品详情</title>
+   <script src="fullpage/js/jquery-1.8.3.min.js"></script>
+   <script src="assets/js/Menu.js"></script>
+   <script src="assets/js/LoginBox.js"></script>
+   <script src="assets/js/MenuList.js"></script>
+   <script src="assets/js/imageLoop.js"></script>
+   <script src="assets/js/objArea.js"></script>
+   <script src="assets/js/getcityinfo.js"></script>
+
+   <link href="assets/css/product2.0.css" rel="stylesheet">
+   <link href="assets/css/mediascreen.css" rel="stylesheet">
+
+   <script>
+   window.onresize = function(e)
+  {
+	$('#cframe').AutoSize(750);
+	var l = parseInt($('#LeftPop').css('left'),10);
+	var r = parseInt($('#RightPop').css('right'),10);
+	if(l!=0)
+	$('#LeftPop').css('left',-parseInt($('#LeftPop').width(),10)+'px');
+	if(r!=0)
+	$('#RightPop').css('right',-parseInt($('#RightPop').width(),10)+'px');
+	
+	var h = parseInt($(window).height(),10);
+	h-=70;
+	$('#adjust').css('height',h+'px');
+	
+	
+  }
+
+$(document).ready(function(e) {
+	$('#cframe').AutoSize(750);
+	var clock_id = null;
+	var h = parseInt($(window).height(),10);
+	h-=70;
+	$('#adjust').css('height',h+'px');
+	
+    $('.Login,#Login').click(function(e) {
+        $('#LoginBox').fadeBoxIn(600);
+		$('.Shell_box').eq(1).fadeIn(600);
+    });
+	
+	$('.Bag').click(function(e) {
+       $('#RightPop').RMenu();
+    });
+	
+	$('#LoginClose').click(function(e) {
+        $('#LoginBox').fadeBoxOut(600);
+		$('.Shell_box').eq(1).fadeOut(600);;
+    });
+	
+	$('.Search,#Search').click(function(e) {
+        $('#SearchBox').fadeBoxIn(600);
+		$('.Shell_box').eq(1).fadeIn(600);
+    });
+	
+	$('#SearchClose').click(function(e) {
+        $('#SearchBox').fadeBoxOut(600);
+		$('.Shell_box').eq(1).fadeOut(600);
+    });
+	
+	$('.sq').click(function(e) {
+       var obj = $(this).parent('p').parent('div');
+	   obj.animate({top:-parseInt(obj.height(),10)+'px'},1200); 
+    });
+	
+	$('#fus').hover(function (ie){
+		$('#us_pop').fadeIn(100);
+		},function(oe){
+		$('#us_pop').fadeOut(100);
+			});
+			
+		$('#ImgBox').initLoop();
+			
+	clock_id = setInterval("$('#ImgBox').startLoop(600)",5000);
+	
+	//鼠标移入暂停图片轮播，移出后恢复
+	$('#ImgBox').hover(function(ein){
+		
+		clearInterval(clock_id);
+		clock_id = null;
+		
+		},function(eout){
+			clock_id = setInterval("$('#ImgBox').startLoop(600)",5000);
+			});
+			
+	$('#Next').click(function(e){
+		
+		$('#ImgBox').NextImage(600);
+		});
+		
+	$('#Prev').click(function(e) {
+        $('#ImgBox').PrevImage(600);
+    });
+	
+	$('#ImgBox #dot').on("click",'a',function(e){
+		
+		var index = $('#ImgBox #dot a').index($(this)[0]);
+		$('#ImgBox').toIndexImg(index,600);
+		
+		});
+		
+		$('#address').click(function(e) {
+            $('#address').AddrList(300);
+			$('#citydata').BindProvince(obj_area);
+        });
+		
+		$('#kuaidi_charge').click(function(e) {
+            $(this).CostList(300);
+        });
+		
+	$('#subcal').click(function(e) {
+        $(this).BtnNumerClick(e);
+    });
+	$('#addcal').click(function(e) {
+        $(this).BtnNumerClick(e);
+    });
+	
+	$('.li_title a').click( function (e){
+		
+		$(this).selectionDiv($(this).index()-1);
+		
+		});
+	
+});
+</script>
+<script type="text/javascript">
+  window.onload=function(){
+    var width = document.body.clientWidth;
+    if(width<1024){
+      /*$("#LeftPop .ch").hide();*/
+       
+        $("#LeftPop ul li:nth-child(1) .en").html("主页  Home");
+        $("#LeftPop ul li:nth-child(3) .en").html("美丽小居室 Beautifully Small House");
+        $("#LeftPop ul li:nth-child(5) .en").html("所有商品  All Products");
+        $("#LeftPop ul li:nth-child(6) .en").html("分类商品  Classified Goods");
+        $("#LeftPop ul li:nth-child(7) .en").html("最新商品  Newest Products");
+        $("#LeftPop ul li:nth-child(9) .en").html("艺心在延续  Art into Life");
+        
+
+        $("#LeftPop ul li:nth-child(1) .ch").html("主页  Home");
+        $("#LeftPop ul li:nth-child(3) .ch").html("美丽小居室Beautifully Small House");
+        $("#LeftPop ul li:nth-child(5) .ch").html("所有商品  All Products");
+        $("#LeftPop ul li:nth-child(6) .ch").html("分类商品  Classified Goods");
+        $("#LeftPop ul li:nth-child(7) .ch").html("最新商品  Newest Products");
+        $("#LeftPop ul li:nth-child(9) .ch").html("艺心在延续  Art into Life");
+    }
+};
+</script>
+  </head>
+  <body>
+
+    <!--totop-->
+        <div id="goToTop">
+          <div class="animate-bounce-up"></div>
+          <a id="backtop" href="#H3"><img src="images/top_line.png"/></a>
+        </div>
+
+        <div class="Shell_box"></div>
+        <div class="Shell_box" style="z-index:1020;"></div>
+
+<!--登陆框-->
+<div id="LoginBox">
+  <div id="first_box">
+    <img id="LoginClose" src="images/close_1.png" onMouseOver="javascript:$(this).get(0).src='images/close_2.png';" onMouseOut="javascript:$(this).get(0).src='images/close_1.png';">
+    <img src="images/login_logo.png" id="Llogo"><span class="welcome"></span>
+  </div>
+  <div id="second_box">
+    <div id="QRCode">
+    <img src="images/login_er.png">
+    <p>请使用微信扫一扫一键登录</p>
+    <p>关注并绑定牛奶面包公众服务号，获取订单实时状态及家居潮流趋势。</p>
+    </div>
+  </div>
+  <div id="last_box"><img src="images/logo_footer.png"></div>
+</div>
+
+<div id="SearchBox">
+<input type="text"  id="stext" value="请输入关键词" onFocus="javascript:if(this.value=='请输入关键词')this.value='';" onBlur="javascript:if(this.value==''||this.value==null)this.value='请输入关键词';">
+<img id="SearchIcon" src="images/search_1.png">
+<img id="SearchClose" src="images/close_1.png" onMouseOver="javascript:$(this).get(0).src='images/close_2.png';" onMouseOut="javascript:$(this).get(0).src='images/close_1.png';">
+</div>
+
+<div id="head">
+  <div id="Black"></div>
+  <div id="LogoFiled">
+    <a href="Index.html"><img  style="" src="assets/css/images/header_logo.svg" ></a>
+  </div>
+  <div><a href="#" id="Menu" onClick="javascript:$('#LeftPop').LMenu();">Menu</a></div>
+  <!--<div style="text-align:center;border:1px solid red;">&nbsp;</div>-->
+  <div>
+  <a class="NaN Login" href="#"><span>Login</span></a><a class="NaN Order" href="Orders.html"><span>Orders(1)</span></a><a class="NaN Fav" href="Collection.html"><span>Favorites</span></a><!--
+--><a class="NaN Bag" href="#"><span>Bag(40)</span></a><!--
+--><a class="NaN Search" href="#"><span>Search</span></a>
+  </div>
+</div>
+
+
+<div id="RightPop">
+   <img src="assets/css/images/close.svg" id="MenuClose" onClick="javascript:$('#RightPop').RMenu();">
+   <div id="Rm">Bag</div>
+   <ul id="shopping_car">
+     <li class="first_p">
+       <a href="Products_Detal_New.html">
+         <img src="images/list1.png">
+         <div class="carcp">
+           <span>名称:花瓶</span>
+           <span>数量:10</span>
+           <span>价格:1200</span>
+         </div>
+       </a>
+     </li>
+     <li>
+       <a href="Products_Detal_New.html#">
+         <img src="images/list1.png">
+         <div class="carcp">
+           <span>名称:花瓶</span>
+           <span>数量:10</span>
+           <span>价格:1200</span>
+         </div>
+       </a>
+     </li>
+     <li>
+       <a href="Products_Detal_New.html">
+         <img src="images/list1.png">
+         <div class="carcp">
+           <span>名称:花瓶</span>
+           <span>数量:10</span>
+           <span>价格:1200</span>
+         </div>
+       </a>
+     </li>
+     <li class="filed"><a href="ShoppingCar.html" id="goto">前往购物车</a></li>
+   </ul>
+   
+   <ul id="pc_hidden">
+     <li><a href="#" id="Login" >Login</a></li>
+     <li><a href="#">Orders(1)</a></li>
+     <li><a href="#">Favorites</a></li>
+     <li><a href="#" id="Search" >Search</a></li>
+     
+   </ul>
+   </div>
+
+
+<div id="LeftPop">
+  <img src="assets/css/images/close.svg" id="MenuClose" onClick="javascript:$('#LeftPop').LMenu();">
+  <div>Menu</div>
+  <ul>
+    <li><a href="Index.html"><span class="en">Home</span><span class="ch">回到主页</span></a></li>
+    <li><a class="left_line">-</a></li>
+    <li><a href="BeautifulRoom.html"><span class="en">Beautifully Small House</span><span class="ch">美丽小居室</span></a></li>
+    <li><a href="#" class="left_line">-</a></li>
+    <li><a href="AllProduct_New.html"><span class="en">All Products</span><span class="ch">所有商品</span></a></li>
+    <li><a href="Classified.html"><span class="en">Classified Goods</span><span class="ch">分类商品</span></a></li>
+    <li><a href="NewestProduct.html"><span class="en">Newest Products</span><span class="ch">最新商品</span></a></li>
+    <li><a href="#" class="left_line">-</a></li>
+    <li><a href="2Story.html"><span class="en">Brand Story</span><span class="ch">品牌故事</span></a></li>
+    <li><a href="#" class="left_line">-</a></li>
+    <li><a href="#"><span class="en">Art into Life</span><span class="ch">艺心在延续</span></a></li>
+    <li><a href="#" class="left_line">-</a></li>
+    <li><a href="Index2.html"><span class="en">个人网站</span><span class="ch">个人网站</span></a></li>
+  </ul>
+</div>
+<!--头部及弹窗结束-->
+
+
+
+
+
+<!--中间部分-->
+<div id="cframe">
+  <div id="ImagePart">
+     <div id="ImgBox">
+     <a id="Next"></a>
+     <a id="Prev"></a>
+     <ul id="ImageLoop" >
+       <li><img src="images/data/m20160425074653000581.jpg" id="ImageLoop_img1"></li>
+       <li><img src="images/data/m20160425074654000583.jpg" id="ImageLoop_img2"></li>
+       <li><img src="images/data/m20160425074654000584.jpg" id="ImageLoop_img3"></li>  
+     </ul>
+     <div style="position:absolute; bottom:10px; text-align:center; width:100%;">
+       <ul id="dot">
+         
+       </ul>
+     </div>
+    </div>
+    <ul id="dpaper">
+      <li><img src="images/data/m20160425074654000582.jpg"></li>
+      <li><img src="images/data/m20160425074654000582.jpg"></li>
+      <li></li>
+    </ul>
+  </div>
+  <div id="TextPart">
+     <hr>
+     <h2>产品的名称</h2>
+     <hr>
+     <ul>
+       <li class="li_title">商品描述:</li>
+       <li class="li_text">均匀的线条与弧度，光线透过木材晕开来的质感，溢躺于空间里，是于木之交流，自然之交心，工艺的美学与天然的灵气，阐述人与自然之间的均衡之美。</li>
+     </ul>
+     <hr>
+     <ul>
+       <li class="li_title" id="color" style="height:32px;"><span class="li_sp_title">颜色:</span><a style="background:#ccc;" href="#ImageLoop_img1"></a><a style="background:#966;" href="#ImageLoop_img2"></a><a style="background:#633;" href="#ImageLoop_img3"></a></li>
+       <li class="li_title" id="mat" style="height:32px;"><span class="li_sp_title">材质:</span><a>橡木</a><a>桦木</a></li>
+       <li class="li_title" id="size" style="height:32px;"><span class="li_sp_title">规格:</span><a>350CM(W)×450CM(H)</a><a>300CM(W)×400CM(H)</a></li>
+       <li class="li_title" id="where" style="height:32px;"><span class="li_sp_title" style="padding-right:3px;">配送:</span>
+       <div id="address_contianer">
+       <a id="address">
+         <input id="rec" type="text" readonly value="   浙江省宁波市鄞州区">
+       </a>
+         <ul id="addr_list">
+           <li class="cityopt opsel" onClick="javascript:$('#citydata').BindProvince(obj_area);">省级</li>
+           <li class="cityopt">地级</li>
+           <li class="cityopt">区县</li>
+           <li id="citydata"></li>
+         </ul>
+      </div>
+     </li>
+    </ul>
+     <hr>
+     <ul>
+       <li id="price">￥25.8</li>
+       <li id="buycount" style="margin-bottom:20px;">
+       <a id="_box_outside" style="float:left;border-color: #6B6B6B">
+        <input type="button" id="subcal" value="-" >
+        <input type="text" id="textcal" readonly value="1">
+        <input type="button" id="addcal" value="+">
+       </a>
+       <a style=" height:30px; line-height:30px; padding-left:20px;"> 库存（充足/不足）</a>
+       </li>
+       <li id="buttons">
+         <input type="submit" value="立即购买">
+         <input type="submit" value="加入购物车">
+         <input type="submit" value="加入收藏夹">
+       </li>
+     </ul>
+     <hr>
+     <ul>
+      <li class="li_title">商品保养说明:</li>
+      <li class="li_text">首先要注意温度，水曲柳材质略重而硬，纹理直，花纹美丽，耐腐耐水性好，易加工，韧性大，着色，涂饰性能好，具有良好的装饰性能，相比松木，它坚硬耐磨，不易变形，相比红木，它价格适中，亲民友善，非常环保，采用原生木材，经过脱水脱脂加工，只在家具表层刷一层清漆，原色原味。一般要求室内的温度尽量保持在20—30℃，湿40%——50%。放时尽量别放在过潮或干燥的地方，应尽量使家具远离诸如去污剂、墨水等含腐蚀性和易染色的物品。</li>
+      <li class="li_title">运输说明</li>
+      <li class="li_text">付款后24小时内发货，某些特殊商品付款后48小时内发货（双休日订单将在周一发货），香水、蜡烛等商品无法空运，运输时间无法预估，送达时间以物流实际配送为准，订购后请随时登录查询物流状态。特别提醒：周日及法定节假日不发货。</li>
+      <li class="li_title">退换货说明</li>
+      <li class="li_text">如有质量问题，请在签收后7日内联系客服。</li>
+      <li class="li_text" style="padding-top:60px;">商品编号:2001010101</li>
+     </ul>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<!-- 底部 -->
+<div id="blank">
+  
+</div>
+<div class="bottom_section">
+    <div id="bottom">
+        <div id="navigation">
+        		<div class="bottom_nav">
+	              <ul>
+	                <li><a class="nav_first" href="2ContactUs.html">关于我们</a></li>
+	              </ul>
+	            </div>
+	            <div class="bottom_nav">
+	              <ul>
+	                <li><a class="nav_first" href="2Common_problem.html">购物指南</a></li>
+	              </ul>
+	            </div>
+	            <div class="bottom_nav">
+	              <ul>
+	                <li><a class="nav_first" href="2Associator.html">会员中心</a></li>
+	              </ul>
+	            </div>
+
+	            <div class="bottom_nav">
+	              <ul>
+	                <li><a class="nav_first" href="2Payment.html">支付方式</a></li>
+	              </ul>
+	            </div>
+	            <div class="bottom_nav">
+	              <ul>
+	                <li><a class="nav_first" href="2Logistical_fare.html">配送方式</a></li>
+	              </ul>
+	            </div>
+	            <div class="bottom_nav">
+	              <ul>
+	                <li><a class="nav_first" href="2Return_exchange.html">售后服务</a></li>
+	              </ul>
+	            </div>
+        </div>
+
+           <div id="bottom_text">
+             <p>在线客服</p>
+             <P class="online_service"><a href=""><IMG id="tq_kefu_main" version="20100823" style="background:transparent none repeat scroll 0% 0%;cursor:pointer" onclick="TQKF.kefuimg.Distrabute()" /></a></P>
+             <p class="service">客服电话</p>
+             <p class="tel">0574-88081153</p>
+           </div>
+     
+           <ul id="ul_image">
+              <li class="li_img"><img src="images/weibo.png"><a>官方微博</a></li> 
+              <li class="li_img"><img src="images/guanwang.png"><a>官方网站</a></li>
+              <li class="li_img"><img src="images/weixin_er.png"><a>官方微信</a></li>
+              
+          </ul>
+          
+    </div>
+    <div class="copyright">
+      <span style="color:#5E5C5C">copyright © 2015-2016 milk&bread</span>
+      <span style="color:#5E5C5C">All Rights Reserved.| 浙ICP备15000846号-1</span>
+    </div>
+  </div>
+   <script type="text/javascript">
+          $(document).ready(function(){
+              //首先将#back-to-top隐藏
+              $("#goToTop").hide();
+              //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
+              $(function () {
+                $(window).scroll(function(){
+              if ($(window).scrollTop()>30){
+                $("#goToTop").fadeIn(500);
+              }
+              else
+              {
+                $("#goToTop").fadeOut(500);
+              }
+              });
+              //当点击跳转链接后，回到页面顶部位置
+              $("#goToTop").click(function(){
+                $('body,html').animate({scrollTop:0},1000);
+                return false;
+              });
+              });
+              });
+          </script>
+  <SCRIPT LANGUAGE="JavaScript" src=http://float2006.tq.cn/floatcard?adminid=9747713&sort=2 ></SCRIPT>
+
+  </body>
+</html>

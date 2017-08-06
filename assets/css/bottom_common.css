@@ -1,0 +1,17 @@
+@charset "utf-8";
+@media screen and (max-device-width:1920px)
+{   
+    .section_bottom{
+        background:#000;
+
+        overflow:-Scroll;
+        overflow-x:hidden;
+        height:980px;
+    }
+    #bottom{
+        height: 80%;
+        border-top: : 1px solid #5F5958;
+        border-bottom: 1px solid #5F5958;
+        margin:4% 0;
+    }
+}

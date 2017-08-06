@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{ margin:0; padding:0;-webkit-text-size-adjust:none;}
+
+a{ color:#7D7776; text-decoration:none;}
+a:hover{ color:#7D7776; text-decoration:none;}
+img{ border:none;}
+
+li{ list-style:none;}
+
+.clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+/*商品详细页*/
+/*iteminfo*/
+.iteminfo{}
+.iteminfo_parameter{ padding:8px 0; padding-left:70px;}
+.iteminfo_parameter_default{ color:#5F5958;}
+.iteminfo_parameter p{
+    line-height: 24px;
+    color:#5F5958;
+}
+.iteminfo_parameter dt{ margin-left:-70px; float:left; display:inline; width:60px; white-space:nowrap; text-align:right; color:#5F5958;}
+
+.iteminfo_price{ color:#5F5958; font-size:23pt; font-family:FZY1JW_2, sans-serif;}
+.sys_item_price{ color:#5F5958; font-size:23pt; margin-left: 20px; margin-bottom: 32px;}
+.goods_info{ background:#ffffff; padding:12px 0;}
+
+/*规格*/
+.sys_item_spec dl.iteminfo_parameter dt{ line-height:32px;}
+.sys_item_spec{
+    border-bottom-width: thin;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(95,89,88,0.45);
+    padding-bottom: 4px;
+}
+
+/*一下正对图片*/
+.sys_spec_img{}
+.sys_img li{ float:left; height:28px; position:relative;margin: 4px 5px;}
+.sys_img li a{height:24px; width:24px; padding:1px; float:left; background:#fff; display:inline-block; outline:none; color:#7D7776; }
+.sys_spec_img li a img{ width:24px; height:24px; display:block;}
+.sys_img li.selected a{ border:2px solid #E3CCB9; padding:0px;}
+.sys_img li.selected i{ display:block;}
+
+.sys_spec_text{}
+.sys_spec_text li{ float:left; height:24px; position:relative; margin:2px 6px 2px 0; outline:none;}
+.sys_spec_text li a{ height:24px; padding:1px 6px; border:1px solid #ABA7A6; background:#fff; display:inline-block; line-height:24px; font-size: 11pt;color:#7D7776; }
+.sys_spec_text li a:hover{ border:2px solid #ABA7A6; padding:0 5px; text-decoration:none;}
+.sys_spec_text li.selected a{ border:2px solid #E3CCB9; padding:0 5px;}
+.sys_spec_text li.selected i{ display:block;}

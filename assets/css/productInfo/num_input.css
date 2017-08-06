@@ -1,0 +1,35 @@
+.gw_num{
+    border: 1px solid #ACA7A6;
+    border-radius: 4px;
+    width: 71px;
+    line-height: 28px;
+    overflow: hidden;
+}
+.gw_num em{
+    display: block;
+    height: 28px;
+    width: 18px;
+    float: left;
+    color: #7A7979;
+    border-right: 1px solid #ACA7A6;
+    text-align: center;
+    cursor: pointer;
+    font-style:normal;
+    background-color: #EFEDEC;
+}
+.gw_num .num{
+    display: block;
+    float: left;
+    text-align: center;
+    width: 32px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 28px;
+    border: 0;
+    color: #5F5958;
+}
+.gw_num em.add{
+    float: right;
+    border-right: 0;
+    border-left: 1px solid #ACA7A6;
+}

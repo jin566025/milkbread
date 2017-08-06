@@ -1,0 +1,219 @@
+@charset "utf-8";
+span
+           {
+               -webkit-text-size-adjust:none;
+           }
+           
+            #Main_Page li
+            {
+                border: 1px solid #ACA7A6;
+            }
+             #Main_Page ul li span
+            {
+                font-size:14px;
+            }
+            
+            #Main_Page .header,#Main_Page .items
+            {
+                padding:14px 0px;
+                padding-left:22px;
+                background:#F8F6F5;
+            }
+            
+            #Main_Page .items
+            {
+                padding-top: 0px;
+                padding-bottom:0px;
+                border-top:none;
+                background:#FFF;
+                
+                
+            }
+            
+            
+           #Main_Page .header div,#Main_Page .items div
+            {
+                
+                font-size:14px;
+                display:inline-block;
+            }
+            
+            #Main_Page .items div
+            {
+                height:60px;
+            }
+            
+            
+            
+            
+             
+              
+              #Main_Page ul li.items .d01div
+              {
+                  position:relative;
+              }
+              
+             
+            
+            @media only screen and (max-width:1990px)
+            {
+                #Main_Page{width:70%;}
+                #Main_Page ul li.header .d01div,#Main_Page ul li.items .d01div{width:10%;}
+                #Main_Page ul li.header .d02div,#Main_Page ul li.items .d02div{width:42%;}
+                #Main_Page ul li.header .d03div,#Main_Page ul li.items .d03div{width:15%;}
+                #Main_Page ul li.header .d04div,#Main_Page ul li.items .d04div{width:15%;}
+                #Main_Page ul li.header .d05div,#Main_Page ul li.items .d05div{width:15%;}
+                
+            }
+            
+            @media only screen and (max-width:1024px)
+            {
+                #Main_Page{width:90%;}
+            
+            }
+            
+            @media only screen and (max-width:750px)
+             {
+                #Main_Page{width:95%;}
+                #Main_Page ul li.header .d01div,#Main_Page ul li.items .d01div{width:20%;}
+                #Main_Page ul li.header .d02div,#Main_Page ul li.items .d02div{width:42%; display:none;}
+                #Main_Page ul li.header .d03div,#Main_Page ul li.items .d03div{width:25%;}
+                #Main_Page ul li.header .d04div,#Main_Page ul li.items .d04div{width:25%;}
+                #Main_Page ul li.header .d05div,#Main_Page ul li.items .d05div{width:20%;}
+            
+             }
+            
+             @media only screen and (max-width:480px)
+             {
+                #Main_Page{width:99%;}
+                #Main_Page ul li.header .d01div,#Main_Page ul li.items .d01div{width:20%;}
+                #Main_Page ul li.header .d02div,#Main_Page ul li.items .d02div{width:42%; display:none;}
+                #Main_Page ul li.header .d03div,#Main_Page ul li.items .d03div{width:25%;}
+                #Main_Page ul li.header .d04div,#Main_Page ul li.items .d04div{width:25%;}
+                #Main_Page ul li.header .d05div,#Main_Page ul li.items .d05div{width:20%;}
+                
+                
+             }
+             
+             #Main_Page ul li.items .d02div span,#Main_Page ul li.items div span
+             {
+                 height:60px;
+             }
+             
+            
+             
+             #recommend a
+             {
+                 display:inline-block;
+                 width:60px;
+                 height:60px;
+                 margin-top:17px;
+                 margin-right:20px;
+                 margin-bottom:17px;
+             }
+             
+             #recommend a img
+             {
+                 width:100%;
+                 height:100%;
+                
+             }
+             
+            
+            #Main_Page li img
+            {
+                display:inline-block;
+                float:left;
+                height:60px;
+                width:60px;
+                margin:2px 0px;
+                position:absolute;
+                top:30%;
+                
+            }
+            
+            #CoverShell
+            {
+                width:100%; 
+                display:none; 
+                height:100%; 
+                position:absolute; 
+                z-index:1000; 
+                top:0px;
+                background:url(images/cvbk.png) repeat;
+                /* ONLY FOR BROWSEER SUPPORT CSS3 */ 
+                background:rgba(0,0,0,.4);
+            }
+            .block_frame
+             {
+                 width:100%;
+                 border:1px solid #ACA7A6;
+                 margin-top:12px;
+             }
+             #Main_Page .ad_list li
+             {
+                 border:none;
+                  margin-top:12px;
+                  position:relative;
+                  
+             }
+             
+             #Main_Page .inputbox
+             {
+                
+                 padding:2px 0px;
+                 position:relative;
+                 width:80%;
+                 
+                 
+             }
+             
+             #Main_Page .inputbox span
+             {
+                 display:inline-block;
+                 height:13px;
+                 line-height:13px;
+                 font-size:12px;
+                 line-height:13px;
+                 margin-top:0px;
+                 position:absolute;
+                 top:0px;
+                 margin-left:10px;
+                
+             }
+             
+             .sendFrame
+             {
+                 border:1px solid #ACA7A6;
+                 width:172px;
+                 height:30px;
+                 margin-top:12px;
+                 display:inline-block;
+                 margin-right:30px;
+                 line-height:30px;
+                 text-align:center;
+                 cursor:pointer;
+             }
+             
+             .Frame_Cols
+             {
+                 border-color:#E3CDBA;
+             }
+             
+             .reset
+             {
+                 text-decoration:line-through;
+                 color:#CDCAC9;
+             }
+             .header span,.items span{
+                color: black;
+            }
+            a {
+                color:#0088DB;
+                text-decoration:none;
+                cursor:pointer
+            }
+            a:hover {
+                color:#2A5E8E
+            }
+            a{color:#5f5859;}

@@ -1,0 +1,357 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Cache-Control" content="no-transform" /> 
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<title>牛奶面包家居</title>
+
+<link href="fullpage/css/jquery.fullPage.css" rel="stylesheet">
+<link href="assets/css/index2.0.css" rel="stylesheet">
+<link href="assets/css/bottom.css" rel="stylesheet">
+<link href="assets/css/carousel.css" rel="stylesheet">
+
+<script src="fullpage/js/jquery-1.8.3.min.js"></script>
+<script src="fullpage/js/jquery.fullPage.min.js"></script>
+<script src="assets/js/Menu.js"></script>
+<script src="assets/js/LoginBox.js"></script>
+<script src="assets/js/fullpageAction.js"></script>
+<script src="assets/js/main.js"></script>     
+<script src="assets/js/hide.js"></script>
+<script type="text/javascript">
+  window.onload=function(){
+    $('#Black').fadeOut(500);
+    $('#LogoFiled').fadeOut(500);
+
+    var width = document.body.clientWidth;
+    if(width<1024){
+      /*$("#LeftPop .ch").hide();*/
+       
+        $("#LeftPop ul li:nth-child(1) .en").html("主页  Home");
+        $("#LeftPop ul li:nth-child(3) .en").html("美丽小居室 Beautifully Small House");
+        $("#LeftPop ul li:nth-child(5) .en").html("所有商品  All Products");
+        $("#LeftPop ul li:nth-child(6) .en").html("分类商品  Classified Goods");
+        $("#LeftPop ul li:nth-child(7) .en").html("最新商品  Newest Products");
+        $("#LeftPop ul li:nth-child(9) .en").html("艺心在延续  Art into Life");
+        
+
+        $("#LeftPop ul li:nth-child(1) .ch").html("主页  Home");
+        $("#LeftPop ul li:nth-child(3) .ch").html("美丽小居室Beautifully Small House");
+        $("#LeftPop ul li:nth-child(5) .ch").html("所有商品  All Products");
+        $("#LeftPop ul li:nth-child(6) .ch").html("分类商品  Classified Goods");
+        $("#LeftPop ul li:nth-child(7) .ch").html("最新商品  Newest Products");
+        $("#LeftPop ul li:nth-child(9) .ch").html("艺心在延续  Art into Life");
+    }
+  };
+</script>
+
+
+</head>
+
+<body>
+  
+<!--金橙天战无不胜-->
+<div class="Shell_box"></div>
+<div class="Shell_box" style="z-index:1020;"></div>
+
+
+<!--登陆框-->
+<div id="LoginBox">
+  <div id="first_box">
+    <img id="LoginClose" src="images/close_1.png" onMouseOver="javascript:$(this).get(0).src='images/close_2.png';" onMouseOut="javascript:$(this).get(0).src='images/close_1.png';">
+    <img src="images/login_logo.png" id="Llogo"><span class="welcome"></span>
+  </div>
+  <div id="second_box">
+    <div id="QRCode">
+    <img src="images/login_er.png">
+    <p>请使用微信扫一扫一键登录</p>
+    <p>关注并绑定牛奶面包公众服务号，获取订单实时状态及家居潮流趋势。</p>
+    </div>
+  </div>
+  <div id="last_box"><img src="images/logo_footer.png"></div>
+</div>
+
+<div id="SearchBox">
+<input type="text"  id="stext" value="请输入关键词" onFocus="javascript:if(this.value=='请输入关键词')this.value='';" onBlur="javascript:if(this.value==''||this.value==null)this.value='请输入关键词';">
+<img id="SearchIcon" src="images/search_1.png">
+<img id="SearchClose" src="images/close_1.png" onMouseOver="javascript:$(this).get(0).src='images/close_2.png';" onMouseOut="javascript:$(this).get(0).src='images/close_1.png';">
+</div>
+
+<div id="head">
+  <div id="Black"></div>
+  <div id="LogoFiled">
+    <a href="Index.html"><img  style="" src="assets/css/images/header_logo.svg" ></a>
+  </div>
+  <div><a href="#" id="Menu" onClick="javascript:$('#LeftPop').LMenu();">Menu</a></div>
+  <!--<div style="text-align:center;border:1px solid red;">&nbsp;</div>-->
+  <div>
+  <a class="NaN Login" href="#"><span>Login</span></a><a class="NaN Order" href="Orders.html"><span>Orders(1)</span></a><a class="NaN Fav" href="Collection.html"><span>Favorites</span></a><!--
+--><a class="NaN Bag" href="#"><span>Bag(40)</span></a><!--
+--><a class="NaN Search" href="#"><span>Search</span></a>
+  </div>
+</div>
+
+
+<div id="RightPop">
+   <img src="assets/css/images/close.svg" id="MenuClose" onClick="javascript:$('#RightPop').RMenu();">
+   <div id="Rm">Bag</div>
+   <ul id="shopping_car">
+     <li class="first_p">
+       <a href="Products_Detal_New.html">
+         <img src="images/list1.png">
+         <div class="carcp">
+           <span>名称:花瓶</span>
+           <span>数量:10</span>
+           <span>价格:1200</span>
+         </div>
+       </a>
+     </li>
+     <li>
+       <a href="Products_Detal_New.html#">
+         <img src="images/list1.png">
+         <div class="carcp">
+           <span>名称:花瓶</span>
+           <span>数量:10</span>
+           <span>价格:1200</span>
+         </div>
+       </a>
+     </li>
+     <li>
+       <a href="Products_Detal_New.html">
+         <img src="images/list1.png">
+         <div class="carcp">
+           <span>名称:花瓶</span>
+           <span>数量:10</span>
+           <span>价格:1200</span>
+         </div>
+       </a>
+     </li>
+     <li class="filed"><a href="ShoppingCar.html" id="goto">前往购物车</a></li>
+   </ul>
+   
+   <ul id="pc_hidden">
+     <li><a href="#" id="Login" >Login</a></li>
+     <li><a href="#">Orders(1)</a></li>
+     <li><a href="#">Favorites</a></li>
+     <li><a href="#" id="Search" >Search</a></li>
+     
+   </ul>
+   </div>
+
+
+<div id="LeftPop">
+  <img src="assets/css/images/close.svg" id="MenuClose" onClick="javascript:$('#LeftPop').LMenu();">
+  <div>Menu</div>
+  <ul>
+    <li><a href="Index.html"><span class="en">Home</span><span class="ch">回到主页</span></a></li>
+    <li><a class="left_line">-</a></li>
+    <li><a href="BeautifulRoom.html"><span class="en">Beautifully Small House</span><span class="ch">美丽小居室</span></a></li>
+    <li><a href="#" class="left_line">-</a></li>
+    <li><a href="AllProduct_New.html"><span class="en">All Products</span><span class="ch">所有商品</span></a></li>
+    <li><a href="Classified.html"><span class="en">Classified Goods</span><span class="ch">分类商品</span></a></li>
+    <li><a href="NewestProduct.html"><span class="en">Newest Products</span><span class="ch">最新商品</span></a></li>
+    <li><a href="#" class="left_line">-</a></li>
+    <li><a href="2Story.html"><span class="en">Brand Story</span><span class="ch">品牌故事</span></a></li>
+    <li><a href="#" class="left_line">-</a></li>
+    <li><a href="#"><span class="en">Art into Life</span><span class="ch">艺心在延续</span></a></li>
+    <li><a href="#" class="left_line">-</a></li>
+    <li><a href="Index2.html"><span class="en">个人网站</span><span class="ch">个人网站</span></a></li>
+  </ul>
+</div>
+  </ul>
+</div>
+<div id="dowebok">
+        <div class="section" style="top:0;padding-top:0;margin-top:0;">
+            <div id="banner_tabs" class="flexslider">
+              <ul class="slides">
+              	<li>
+                  <a>
+                    <img class="banner_img1">
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank">
+                    <img class="banner_img2">
+                  </a>
+              </ul>
+              <ol id="bannerCtrl" class="flex-control-nav flex-control-paging">
+                <li><a>1</a></li>
+                <li><a>2</a></li>
+              </ol>
+	        </div>
+	        <div id="headLogo">
+	            <img src="images/logo_s.png">
+	        </div>
+	        <!--<div id="refr">Refreshing at any time of the day</div>-->
+	        <div id="arrow"><img src="assets/css/images/arrow.png" onClick="javascript:$.fn.fullpage.moveSectionDown();"></div> 
+	  </div>
+  <div class="section" style="background:url(images/index_2.jpg) center; background-size:cover;">
+    <div class="Cover1">
+      <div class="sessions2">
+        <h1>Love is to Accompany</h1>
+        <p class="txt_en">Is there a second, so you want to guard me for life. </p>
+        <p class="button_click"><a class="CommandButton" href="BeautifulRoom.html">See More</a></p>
+        <p class="txt_section" style="color: #fff;font-weight: 600;">田园style</p>
+        <div class="p1">
+           <div class="a1" style="color:#fff;">BEAUTIFULLY&nbsp; SMALL&nbsp; HOUSE</div>
+           <div class="a2" style="color:#fff;">&nbsp;美丽小居室</div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+
+  <div class="section" style="background:url(images/index_9.jpg) center; background-size:cover;">
+    <div class="Cover1">
+       <div class="sessions2">
+         <h1>My Little World</h1>
+         <p class="txt_en">The best time to drink a cup of coffee</p>
+         <p class="button_click"><a class="CommandButton" href="BeautifulRoom.html">See More</a></p>
+         <p class="txt_section" style="color: #fff;font-weight: 600;">艺术style</p>
+         <div class="p1">
+           <div class="a1" style="color:#fff;">BEAUTIFULLY&nbsp; SMALL&nbsp; HOUSE</div>
+           <div class="a2" style="color:#fff;">&nbsp;美丽小居室</div>
+        </div>
+       </div>
+    </div>
+  </div>
+ 
+ <!--最新商品-->
+  <div class="section" style="background:url(images/black_backgroound.jpg) center; background-size:cover;">
+    <div class="Cover1">
+      <div class="sessions2">
+          <div id="wrap">
+            <ul class="change_images">
+                <li class="four_pictures first_picture"><p>Single seat sofa</p><p>日式单人沙发</p></li>
+                <li class="four_pictures second_picture"><p>Nordic single sofa</p><p>北欧单人沙发</p></li>
+                <li class="four_pictures third_picture"><p>Iron chair</p><p>铁椅</p></li>
+                <li class="four_pictures fourth_picture"><p>Split heads</p><p>马凳</p></li>
+            </ul>
+          </div>   
+          <div class="p1" id="newest_txt" style="letter-spacing: 2px">
+             <div class="a1" style="color:#fff;">NEWEST&nbsp;&nbsp;PRODUCTS</div>
+             <div class="a2" style="color:#fff;">最新商品</div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section"  style="background:url(images/index_4.jpg) center; background-size:cover;">
+   <div class="Cover1">
+    <div class="sessions2">
+      <h1>Morning</h1>
+      <p class="txt_en">Warm, bathed in the early morning sunshine. </p>
+      <p class="button_click"><a class="CommandButton" href="Classified.html">See More</a></p>
+      <div class="p1">
+         <div class="a1" style="color:#fff;">BEDDING&nbsp;</div>
+         <div class="a2" style="color:#fff;">床品</div>
+      </div>
+    </div>
+   </div>
+  </div>
+  <div class="section" style="background:url(images/index_6.jpg) center; background-size:cover;">
+    <div class="Cover1">
+      <div class="sessions2">
+        <h1 style="color:#5f5958;text-shadow:2px 2px 4px rgba(0,0,0,.5);">Breath of nature</h1>
+        <p class="txt_en" style="color:#5f5958;">The flavor of the hackberry</p>
+        <p class="button_click"><a class="CommandButton" href="Classified.html">See More</a></p>
+        <div class="p1">
+          <div class="a1" style="color:#5f5958;">FURINTURE&nbsp;</div>
+          <div class="a2" style="color:#5f5958;">家具</div>
+       </div>
+      </div>
+    </div>
+  </div>
+  <div class="section" style="background:url(images/banner4.png) center; background-size:cover;">
+    <div class="Cover1">
+      <div class="sessions2">
+       <h1 style="color:#5f5958; text-shadow:2px 2px 4px rgba(0,0,0,.5);">Life style</h1>
+       <p class="txt_en" style="color:#5f5958;">Let yourself out of the ordinary</p>
+       <p class="button_click"><a class="CommandButton" href="Classified.html">See More</a></p>
+       <div class="p1">
+          <div class="a1" style="color:#fff;">POTTERY &nbsp;</div>
+          <div class="a2" style="color:#fff;">陶器</div>
+       </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" style="overflow-y:scroll;">
+    <div id="bottom">
+        <div id="navigation">
+        		<div class="bottom_nav">
+	              <ul>
+	                <li><a class="nav_first" href="2ContactUs.html">关于我们</a></li>
+	              </ul>
+	            </div>
+	            <div class="bottom_nav">
+	              <ul>
+	                <li><a class="nav_first" href="2Common_problem.html">购物指南</a></li>
+	              </ul>
+	            </div>
+	            <div class="bottom_nav">
+	              <ul>
+	                <li><a class="nav_first" href="2Associator.html">会员中心</a></li>
+	              </ul>
+	            </div>
+
+	            <div class="bottom_nav">
+	              <ul>
+	                <li><a class="nav_first" href="2Payment.html">支付方式</a></li>
+	              </ul>
+	            </div>
+	            <div class="bottom_nav">
+	              <ul>
+	                <li><a class="nav_first" href="2Logistical_fare.html">配送方式</a></li>
+	              </ul>
+	            </div>
+	            <div class="bottom_nav">
+	              <ul>
+	                <li><a class="nav_first" href="2Return_exchange.html">售后服务</a></li>
+	              </ul>
+	            </div>
+        </div>
+
+           <div id="bottom_text">
+             <p>在线客服</p>
+             <P class="online_service"><a href=""><IMG id="tq_kefu_main" version="20100823" style="background:transparent none repeat scroll 0% 0%;cursor:pointer" onclick="TQKF.kefuimg.Distrabute()" /></a></P>
+             <p class="service">客服电话</p>
+             <p class="tel">0574-88081153</p>
+           </div>
+     
+           <ul id="ul_image">
+              <li class="li_img"><img src="images/weibo.png"><a>官方微博</a></li> 
+              <li class="li_img"><img src="images/guanwang.png"><a>官方网站</a></li>
+              <li class="li_img"><img src="images/weixin_er.png"><a>官方微信</a></li>
+          </ul>
+          
+    </div>
+    <div class="copyright">
+      <span style="color:#5E5C5C">copyright © 2015-2016 milk&bread</span>
+      <span style="color:#5E5C5C">All Rights Reserved.| 浙ICP备15000846号-1</span>
+    </div>
+  </div>
+   
+</div>
+
+<script src="assets/js/slider.js"></script>
+<script type="text/javascript">
+$(function() {
+  var bannerSlider = new Slider($('#banner_tabs'), {
+    time: 5000,
+    delay: 400,
+    event: 'hover',
+    auto: true,
+    mode: 'fade',
+    controller: $('#bannerCtrl'),
+    activeControllerCls: 'active'
+  });
+})
+</script>
+<SCRIPT LANGUAGE="JavaScript" src=http://float2006.tq.cn/floatcard?adminid=9747713&sort=2 ></SCRIPT>
+</body>
+</html>

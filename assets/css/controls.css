@@ -1,0 +1,137 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*** 基本控件样式 ***/
+
+
+input
+{
+	margin:0px;
+	padding:0px;
+	border:none;
+	background:none;
+	font-family:"方正细圆简体";
+	-webkit-appearance:none;
+	-moz-appearance:none;
+}
+
+.Check_Box
+{
+	width:13px;
+	height:13px;
+	border:1px solid #ACA7A6;
+	display:inline-block;
+	background:#F00;
+	vertical-align:-2px;
+	background:#fff;
+	border-radius:0px;
+	
+	
+}
+
+.Check_Box_Selected
+{
+	background:url(images/chk.png) no-repeat center;
+}
+
+
+
+.Spin_Sub_Controls /* 数值增减控件 减去按钮 */
+{
+	width:20px;
+	display:inline-block;
+	font-size:12px;
+	text-align:center;
+	line-height:20px;
+	height:22px;
+	border:1px solid #ACA7A6;
+	border-top-left-radius:2px;
+	border-bottom-left-radius:2px;
+	background:#EEECEB;
+	color:#5F5958;
+	position:absolute;
+	left:0px;
+	
+}
+
+.Spin_TextArea
+{
+	width:36px;
+	height:22px;
+	border:1px solid #ACA7A6;
+	border-left:none;
+	border-right:none;
+	text-align:center;
+	position:absolute;
+	left:20px;
+	
+}
+
+.Spin_Plus_Controls /* 数值增减控件 增加按钮 */
+{
+	width:20px;
+	display:inline-block;
+	font-size:12px;
+	text-align:center;
+	line-height:20px;
+	height:22px;
+	border:1px solid #ACA7A6;
+	border-top-right-radius:2px;
+	border-bottom-right-radius:2px;
+	background:#EEECEB;
+	color:#5F5958;
+	position:absolute;
+	left:56px;
+}
+
+.Radio_Box
+{
+	width:13px;
+	height:13px;
+	background:url(images/radio.png) no-repeat center;
+}
+
+.Radio_Box_Sel
+{
+	background:url(images/radio_sel.png) no-repeat center;
+}
+
+.Text_NoLeft
+{
+	background:#FFF;
+	border-left:none;
+	height:24px;
+	line-height:22px;
+	width:244px;
+	display:inline-block;
+	border-top-right-radius:2px;
+	border-bottom-right-radius:2px;
+	margin-left:50px;
+	border-right:1px solid #ACA7A6;
+	
+}
+
+.Text_Left
+{
+	display:inline-block;
+	width:auto;
+	height:26px;
+	line-height:26px;
+	border:1px solid #ACA7A6;
+	border-right:none;
+	border-radius:2px;
+	background:#EEECEB;
+	overflow:hidden;
+	
+}
+
+.Text_Ra_Full
+{
+	margin-left:99px;
+	margin-top:8px; margin-bottom:8px; height:25px; border:1px solid #ACA7A6; background:#fff; border-radius:2px;
+}
+
+.Text_Ra_Full:focus
+{
+	border-color:#E3CDBA;
+}

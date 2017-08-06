@@ -1,0 +1,811 @@
+﻿<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        <link rel="stylesheet" href="assets/css/index/register.css" />
+        <link rel="stylesheet" href="assets/css/productInfo/main.css" />
+        <link rel="stylesheet" href="assets/css/index/nav.css" />
+        <!--[if lte IE 8]>
+        <link rel="stylesheet" href="assets/css/index/ie8.css"/><![endif]-->
+        <!--[if lte IE 9]>
+        <link rel="stylesheet" href="assets/css/index/ie9.css"/><![endif]-->
+        <link rel="stylesheet" href="assets/css/index/login1.css" />
+        
+        <link rel="stylesheet" href="assets/css/productInfo/content.css" />
+        <link rel="stylesheet" media="screen and (max-width:1680px)"  href="assets/css/productInfo/content1680.css" />
+        <link rel="stylesheet" href="assets/css/productInfo/selected.css" />
+        <link rel="stylesheet" href="assets/css/productInfo/num_input.css" />
+        <link rel="stylesheet" href="assets/css/productInfo/city.css" />
+        <link rel="stylesheet" href="assets/css/index/shoppingBag.css" />
+        <link rel="stylesheet" href="assets/css/index/Favorites.css" />
+        <link rel="stylesheet" href="assets/css/index/search.css" />
+        <link rel="stylesheet" href="assets/css/productInfo/footer.css" />
+        <link rel="stylesheet" href="orbit/css/orbit.css" />
+        <link rel="stylesheet" href="assets/css/product.css" >
+        <link rel="stylesheet" href="assets/js/productInfo/city/select2.css">
+        <link rel="stylesheet" href="assets/css/controls.css">
+        <!--link rel="stylesheet" href="assets/css/lanrenzhijia.css" /-->
+        <title>订单支付</title>
+        
+			
+           <style>
+		   
+		   span
+		   {
+			   -webkit-text-size-adjust:none;
+		   }
+		   
+		
+			
+			#Main_Page p
+			{
+				font-size:12px;
+				line-height:20px;
+				color:#7D7776;
+			}
+           
+		   .Box_Button
+			{
+				position:relative;
+				height:24px;
+				display:inline-block;
+				width:180px;
+				margin-top:30px;
+				
+			}
+			
+			@media only screen and (max-width:1990px)
+			{
+				#Main_Page{width:74%;}
+				#Main_Page #title_text
+				{font-size:18px;}
+				.Box_Button
+				{
+					width:194px;
+				}
+			}
+			
+			@media only screen and (max-width:1024px)
+			{
+				#Main_Page{width:82%;}
+				#Main_Page #title_text
+				{font-size:18px;}
+				.Box_Button
+				{
+					width:194px;
+				}
+			
+			}
+			
+			@media only screen and (max-width:750px)
+			 {
+				#Main_Page{width:88%;}
+				.Box_Button
+				{
+					width:100%;
+					overflow:hidden;
+				}
+				#Main_Page #title_text
+				{font-size:14px;}
+				
+			
+			 }
+			
+			 @media only screen and (max-width:480px)
+			 {
+				#Main_Page{width:92%;}
+				.Box_Button
+				{
+					width:100%;
+					overflow:hidden;
+				}
+				#Main_Page #title_text
+				{font-size:12px;}
+				
+				
+			 }
+			 
+			
+			
+			.Box_Button input
+			{
+				position:absolute;
+				top:5px;
+				
+			}
+			
+			.Box_Button img
+			{
+				position:absolute;
+				left:21px;
+			}
+			
+			#Main_Page ul li
+			{
+				
+				width:100%;
+			}
+			
+			
+			#CoverShell
+			{
+				width:100%; 
+				display:none; 
+				height:100%; 
+				position:absolute; 
+				z-index:1000; 
+				top:0px;
+				background:url(images/cvbk.png) repeat;
+				/* ONLY FOR BROWSEER SUPPORT CSS3 */ 
+				background:rgba(0,0,0,.4);
+			}
+           
+            #Pay_Now
+			{
+				 background:#ACA7A6;color:#FFFEFE;
+			}
+			
+			#Pay_Now:hover
+			{
+				background:#5F5756;
+			}
+            </style>
+      
+    </head>
+    <body class="landing">
+        
+          
+		<!-- Page Wrapper -->
+			<div>
+            <div id="CoverShell">
+            
+            </div>
+				<!-- Header -->
+					<header id="header">
+						<h1>
+							<div class="head_logo">
+								<img style="width: 146px; height: 20px;" src="assets/css/images/header_logo.svg">
+							</div>
+						</h1>
+						<div id="nav1">
+							<ul>
+								<li class="special">
+									<a href="#menu1" class="menuToggle"style="font-family: AovelSans_0 "><span>Menu</span></a>
+									<div id="menu1" class="left_nav">
+										<ul class="left_nav_ul">
+											<li class="bi ci">Menu</li>
+                                            <li><a href="index_定稿_new.html" class="bi" style="margin-top: 90px;">Home<span>回到首页</span></a></li>
+                                            <li><a href="#" class="ei"><span>-</span></a></li>
+                                            <li><a href="#" class="ei"><span>-</span></a></li>
+											<li><a href="BeautifulRoom.html" class="bi">Beautifully Small House<span>美丽小居室</span></a></li>
+											<li><a href="AllHouse.html" class="bi">Home Furnishing<span>全屋家居</span></a></li>
+											<li><a href="#" class="ei"><span>-</span></a></li>
+											<li><a href="AllProduct.html" class="bi">All Products<span>所有商品</span></a></li>
+											<li><a href="#" class="bi">Classified Goods<span>分类商品</span></a></li>
+											<li><a href="#" class="bi">Newest Products<span>最新商品</span></a></li>
+											<li><a href="#" class="ei"><span>-</span></a></li>
+											<li><a href="#" class="bi">Activities<span>活动</span></a></li>
+											<li><a href="#" class="ei"><span>-</span></a></li>
+											<li><a href="#" class="bi">Creative Community<span>创意社区</span></a></li>
+											<li><a href="#" class="ei"><span>-</span></a></li>
+											<li><a href="#" class="bi">Brand Story<span>品牌故事</span></a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<nav id="nav">
+							<ul>
+								<li class="right_menu">
+									<a href="javascript:;" class="login menuToggle2 change"><span class="en" style="font-family: AovelSans_0">Login</span></a>
+								</li>
+
+
+								<li class="right_menu ">
+									<a href="Collection.html" class="menuToggle1 Favorites"><span class="en" style="font-family: AovelSans_0">Favorites</span></a>
+								</li>
+                                
+                                <li class="right_menu ">
+									<a href="Orders.html" class="menuToggle4 change"><span class="en" style="font-family: AovelSans_0">Orders</span></a>
+								</li>
+                                
+								<li class="right_menu">
+									<a href="ShoppingCar.html" class="menuToggle change"><span class="en" style="font-family: AovelSans_0">Bag(3)</span></a>
+								</li>
+								<li class="right_menu">
+										<a href="javascript:;" class="search menuToggle3 change"><span class="en" style="font-family: AovelSans_0">Search</span></a>
+								</li>
+
+								<!--购物车列表-->
+								<div id="menu">
+									<div class="cat">
+										<p style="color: #ffffff">Bag</p>
+									</div>
+										<div class="cat_title">
+											<p style="">15件商品</p>
+										</div>
+									<ul>
+										<li class="menu_li">
+											<a href="#">
+												<div class="shopping_cat">
+													<div class="cat_list" style="border-top: 1px  solid rgba(255,255,255,0.25);">
+														<div class="bag_list">
+															<img src="images/list1.png"/>
+														</div>
+														<div class="bag_list">
+															<ul>
+																<li>毛线花瓶</li>
+																<li>数量：1</li>
+																<li>价格：208</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="menu_li">
+											<a href="#">
+												<div class="shopping_cat">
+													<div class="cat_list">
+														<div class="bag_list">
+															<img src="images/list1.png"/>
+														</div>
+														<div class="bag_list">
+															<ul>
+																<li>毛线花瓶</li>
+																<li>数量：1</li>
+																<li>价格：208</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="menu_li">
+											<a href="#">
+												<div class="shopping_cat">
+													<div class="cat_list">
+														<div class="bag_list">
+															<img src="images/list1.png"/>
+														</div>
+														<div class="bag_list">
+															<ul>
+																<li>毛线花瓶</li>
+																<li>数量：1</li>
+																<li>价格：208</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="menu_li">
+											<a href="#">
+												<div class="shopping_cat">
+													<div class="cat_list">
+														<div class="bag_list">
+															<img src="images/list1.png"/>
+														</div>
+														<div class="bag_list">
+															<ul>
+																<li>毛线花瓶</li>
+																<li>数量：1</li>
+																<li>价格：208</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="menu_li">
+											<a href="#">
+												<div class="shopping_cat">
+													<div class="cat_list">
+														<div class="bag_list">
+															<img src="images/list1.png"/>
+														</div>
+														<div class="bag_list">
+															<ul>
+																<li style="font-weight: lighter ">毛线花瓶</li>
+																<li>数量：1</li>
+																<li>价格：208</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</a>
+										</li>
+									</ul>
+									<div class="total" style="margin-left: 60px;">
+										<p  style="color: #9F9FA0; font-weight: lighter ">商品总计：¥5810</p>
+									</div>
+									<div class="gocat" style="margin-left: 60px;">
+										<a style="font-weight: lighter ">去我的购物车</a>
+									</div>
+								</div>
+								<!--收藏夹列表-->
+								<div id="menu2">
+									<div class="cat">
+										<p style="color: #ffffff">Favorites</p>
+									</div>
+									<div class="cat_title">
+										<p>26件商品</p>
+									</div>
+									<ul>
+										<li class="menu_li">
+											<a href="#">
+												<div class="Favorites_list">
+													<div class="cat_list" style="border-top: 1px  solid rgba(255,255,255,0.25);">
+														<div class="bag_list">
+															<img src="images/list1.png"/>
+														</div>
+														<div class="bag_list">
+															<ul>
+																<li>毛线花瓶</li>
+																<li>数量：1</li>
+																<li>价格：208</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="menu_li">
+											<a href="#">
+												<div class="shopping_cat">
+													<div class="cat_list">
+														<div class="bag_list">
+															<img src="images/list1.png"/>
+														</div>
+														<div class="bag_list">
+															<ul>
+																<li>毛线花瓶</li>
+																<li>数量：1</li>
+																<li>价格：208</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="menu_li">
+											<a href="#">
+												<div class="shopping_cat">
+													<div class="cat_list">
+														<div class="bag_list">
+															<img src="images/list1.png"/>
+														</div>
+														<div class="bag_list">
+															<ul>
+																<li>毛线花瓶</li>
+																<li>数量：1</li>
+																<li>价格：208</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="menu_li">
+											<a href="#">
+												<div class="shopping_cat">
+													<div class="cat_list">
+														<div class="bag_list">
+															<img src="images/list1.png"/>
+														</div>
+														<div class="bag_list">
+															<ul>
+																<li>毛线花瓶</li>
+																<li>数量：1</li>
+																<li>价格：208</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="menu_li">
+											<a href="#">
+												<div class="shopping_cat">
+													<div class="cat_list">
+														<div class="bag_list">
+															<img src="images/list1.png"/>
+														</div>
+														<div class="bag_list">
+															<ul>
+																<li>毛线花瓶</li>
+																<li>数量：1</li>
+																<li>价格：208</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</a>
+										</li>
+									</ul>
+									<div class="gofor">
+										<a>去我的收藏夹</a>
+									</div>
+								</div>
+
+
+
+							</ul>
+
+						</nav>
+					</header>
+				<!--登录弹框页面-->
+				<div id="bg"></div>
+				<div class="theme-popover" style="margin:0px;">
+					<div class="theme-poptit" >
+							<div class="head_close"><a href="javascript:;" title="关闭" class="close" ><img src="images/close_1.png" onmouseover="this.src='images/close_2.png'" onmouseout="this.src='images/close_1.png'"></a></div>
+							<div class="head_login"><img src="images/login_logo.png" style="display: block; margin-top:-7px"></div>
+							<div class="head_login login_text"><p style="color:#8E8892;display: block;">|小面包欢迎回来</p></div>
+					</div>
+					<div class="login_content">
+						<div class="login_con">
+							<ul>
+								<li style="margin-top: 35px;"><img src="images/login_er.png"/></li>
+								<li style="margin-top: -4px; color: #5E5857">请使用微信扫一扫一键登录</li>
+								<li style="margin-top: 13px; font-size: 12px; color: #ACA7A6">关注并绑定牛奶面包公众服务号，获取订单实时状态及家居潮流趋势。</li>
+							</ul>
+						</div>
+					</div>
+
+					<div style="width: 100%; text-align: center; line-height: 65px;"><img src="images/logo_footer.png"></div>
+				</div>
+				<!--搜索-->
+				<div class="search-popover">
+					<div class="search-poptit" >
+						<div class="head_close"><a href="javascript:;" title="关闭" class="close" ><img src="images/close_1.png" onmouseover="this.src='images/close_2.png'" onmouseout="this.src='images/close_1.png'"></a></div>
+						<div class="search_input">
+							<li><input type="text"name="log" value="请输入你要搜索的关键词" onfocus="this.value=''" onblur="if(this.value==''){this.value='请输入你要搜索的关键词'}"size="24" /></li>
+							<li style="margin-left: 14px;"><a href="#" style="border: none"><img src="images/search_1.png"></a></li>
+						</div>
+					</div>
+
+				</div>
+
+            <!--中间部分-->
+             <!--主体部分-->
+             <!--弹窗-->
+            <style>
+			@media only screen and (max-width:1990px){
+            #PopBox
+			{
+				width:504px;
+				height:272px;
+				border-radius:10px;
+				border:1px solid #ACA7A6;
+				position:absolute;
+				margin:0px auto;
+				top:0px; 
+				overflow:hidden;
+				background:#ACA7A6;
+				left:25%;
+			}
+			}
+			
+			@media only screen and (max-width:750px){
+            #PopBox
+			{
+				max-width:504px;
+				width:100%;
+				height:272px;
+				border-radius:2px;
+				border:1px solid #ACA7A6;
+				position:absolute;
+				margin:0px auto;
+				top:-1500px; 
+				overflow:hidden;
+				background:#ACA7A6;
+				left:5%;
+			}
+			}
+			
+			 #PopBox
+			 {
+				 float:left;
+				 top:130px;
+				 
+				 display:none;
+				 z-index:1000;
+			 }
+			#PopBox div
+			{
+				padding:0px 26px;
+			}
+			
+			#Isee
+			{
+				width:94px;
+				height:30px;
+				padding:0px;
+				font-size:14px;
+				line-height:30px;
+				background:#ACA7A6;
+				color:#fff;
+				text-align:center;
+				border-radius:4px;
+				cursor:pointer;
+				
+				
+			}
+			
+			#Isee:hover
+			{
+				background:#5F5756;
+			}
+			
+            </style>
+            
+           
+            
+            <div id="PopBox" style="z-index:1500;">
+              <div style="padding-top:20px;padding-bottom:20px; color:#fff;">银行信息</div>
+              <div style="border-bottom:1px solid #ACA7A6; background:#FFF; padding-top:40px; padding-bottom:34px; font-size:12px; line-height:20px;">
+              如果您无法官网完成网上直接支付，请您联系客服400-9800-246，微信服务号：牛奶面包创意家居 或者客服 service@milk-bread.com，客服会提供您转账信息并协助您完成支付。
+              </div>
+              <div style="background:#FFF; padding-top:30px; padding-bottom:30px;">
+                <div id="Isee">我知道了</div>
+              </div>
+            </div>
+            
+            <div id="Main_Page" style=" margin:0px auto; height:auto; padding-top:130px;">
+            
+            
+            
+            <div id="title_text" style="width:100%; background:#EEECEB; text-align:center;  height:50px; line-height:50px; border-radius:1px; color:#5F5958;">您的订单已生成<span>&nbsp;Your&nbsp;order&nbsp;has&nbsp;been&nbsp;generated</span>
+            </div>
+            <div style="padding-top:20px;">
+<p>感谢您的惠顾！</p>
+<p>您的订单是：%s&nbsp;&nbsp;&nbsp;<span>订单金额  ￥&nbsp;%f</span></p>
+<p>我们建议您尽快完成付款，如果30分钟内未完成付款，系统将自动取消该订单。</p>
+<p>友情提醒：您在网上付款时，可能会受到支付限额影响而无法完成付款，这是由您所用的银行卡的网上支付限额决定的。</p>
+<p>如果无法付款，请拨打客服热线 400-9800-246 咨询。</p>
+            </div>
+            
+            <div style="font-size:14px; background:url(images/dot.png) no-repeat center left; color:#7D7776; padding-left:14px; margin-top:36px;">选择支付方式立即支付</div>
+            <!--radio button-->
+            <div>
+            <ul>
+            <li><div class="Box_Button"><input type="radio" name="pay" class="Radio_Box"><img src="images/alipay.jpg" alt="支付宝"></div></li>
+            <li>
+            <div class="Box_Button"><input type="radio" name="pay" class="Radio_Box"><img src="images/icbc.jpg" alt="工商银行"></div>
+            <div class="Box_Button"><input type="radio" name="pay" class="Radio_Box"><img src="images/ccb.jpg" alt="建设银行"></div>
+            <div class="Box_Button"><input type="radio" name="pay" class="Radio_Box"><img src="images/boc.jpg" alt="中国银行"></div>
+            </li>
+            
+            <li>
+            <div class="Box_Button"><input type="radio" name="pay" class="Radio_Box"><img src="images/abc.jpg" alt="农业银行"></div>
+            <div class="Box_Button"><input type="radio" name="pay" class="Radio_Box"><img src="images/bcm.jpg" alt="交通银行"></div>
+            <div class="Box_Button"><input type="radio" name="pay" class="Radio_Box"><img src="images/psib.jpg" alt="邮政储蓄银行"></div>
+            </li>
+            
+            <li>
+            <div class="Box_Button"><input type="radio" name="pay" class="Radio_Box"><img src="images/spb.jpg" alt="浦发银行"></div>
+            <div class="Box_Button"><input type="radio" name="pay" class="Radio_Box"><img src="images/gfb.jpg" alt="广发银行"></div>
+            <div class="Box_Button"><input type="radio" name="pay" class="Radio_Box"><img src="images/citic.jpg" alt="中信银行"></div>
+            </li>
+            
+            <li>
+            <div class="Box_Button"><input type="radio" name="pay" class="Radio_Box"><img src="images/xyb.jpg" alt="兴业银行"></div>
+            <div class="Box_Button"><input type="radio" name="pay" class="Radio_Box"><img src="images/sfb.jpg" alt="深圳发展银行"></div>
+            <div class="Box_Button"><input type="radio" name="pay" class="Radio_Box"><img src="images/msb.jpg" alt="民生银行"></div>
+            </li>
+            
+             <li>
+            <div class="Box_Button"><input type="radio" name="pay" class="Radio_Box"><img src="images/bob.jpg" alt="北京银行"></div>
+            <div class="Box_Button"><input type="radio" name="pay" class="Radio_Box"><img src="images/hb.jpg" alt="杭州银行"></div>
+            <div class="Box_Button"><input type="radio" name="pay" class="Radio_Box"><img src="images/bos.jpg" alt="上海银行"></div>
+            </li>
+            
+            <li>
+            <div class="Box_Button"><input type="radio" name="pay" class="Radio_Box"><img src="images/bnsb.jpg" alt="北京农村商业银行"></div>
+            <div class="Box_Button"><input type="radio" name="pay" class="Radio_Box"><img src="images/pab.jpg" alt="平安银行"></div>
+            <div class="Box_Button"><input type="radio" name="pay" class="Radio_Box"><img src="images/fdb.jpg" alt="富滇银行"></div>
+            </li>
+            
+             <li>
+            <div class="Box_Button"><input type="radio" name="pay" class="Radio_Box"><img src="images/bow.jpg" alt="温州银行"></div>
+            <div class="Box_Button"><input type="radio" name="pay" class="Radio_Box"><img src="images/bon.jpg" alt="宁波银行"></div>
+           
+            </li>
+            
+            </ul>
+            
+            <div id="Pay_Now" style="margin-top:40px; margin-bottom:16px; width:94px; height:34px; border-radius:4px; line-height:34px; text-align:center; font-size:14px; cursor:pointer;">立即支付</div>
+            <p style="margin-bottom:150px;">如果您无法通过上述方式付款，您可以选择银行转账汇款方式付款。<a style="margin-left:60px;">点击这里查看转账信息</a></p>
+            
+           
+            
+            </div>
+            <!-- 结束主体-->
+            
+            </div>
+            
+            
+            
+            <style>
+			 .foot_part *
+			 {
+				 color:#5F5958;
+				 font-size: 12px;
+				 font-family:"微软雅黑";
+			 }
+			 
+			 .foot_part li.title
+			 {
+				 font-weight:bold;
+				 font-size:14px;
+				 color:#9f9fa0;
+				 margin-bottom:18px;
+			 }
+			 
+            .foot_part ul
+			{
+				min-width:360px;
+				text-align:center;
+				margin-top:30px;
+			}
+			
+			.foot_part ul li div
+			{
+				display:inline-block;
+				margin:0 20px;
+			}
+			
+			.foot_part ul li div img
+			{
+				display:block;
+				margin-bottom:22px;
+			}
+			
+			.foot_part a
+			{
+				font-size: 12px;
+				font-family:"微软雅黑";
+				color:#717071;
+			}
+			
+			.foot_part a:hover
+			{
+				font-weight:bold;
+				color:#fff;
+			}
+            </style>
+			<div class="foot_part" style="min-height:850px; background:#000; width:100%; padding:45px 0;">
+              <div style="border:1px solid #5F5958; width:100%; border-right:none;border-left:none;">
+              <ul>
+                <li class="title">关于我们</li>
+                <li><a>我们的故事</a>&nbsp;|&nbsp;<a>创意生活馆</a>&nbsp;|&nbsp;<a>媒体报道</a>&nbsp;|&nbsp;<a>诚聘英才</a>&nbsp;|&nbsp;<a>联系我们</a></li>
+              </ul>
+               <ul>
+                <li class="title">购物指南</li>
+                <li><a>用户协议</a>&nbsp;|&nbsp;<a>购物流程</a>&nbsp;|&nbsp;<a>会员中心</a>&nbsp;|&nbsp;<a>常见问题</a>&nbsp;|&nbsp;<a>联系客服</a></li>
+              </ul>
+               <ul>
+                <li class="title">支付方式</li>
+                <li><a>货到付款</a>&nbsp;|&nbsp;<a>在线支付</a>&nbsp;|&nbsp;<a>余额支付</a>&nbsp;|&nbsp;<a>现金券支付</a>&nbsp;|&nbsp;<a>发票制度</a></li>
+              </ul>
+              <ul>
+                <li class="title">配送方式</li>
+                <li><a>包邮政策</a>&nbsp;|&nbsp;<a>配送范围及运费</a>&nbsp;|&nbsp;<a>验货与签收</a></li>
+              </ul>
+              <ul>
+                <li class="title">售后服务</li>
+                <li><a>退换货政策</a>&nbsp;|&nbsp;<a>退款方式</a></li>
+              </ul>
+              <ul style="margin-bottom:30px;">
+                <li class="title">关注我们</li>
+                <li style="margin-top:32px;">
+                <div><img src="images/weixin_er.png"><span>官方微信</span></div>
+                <div><img src="images/guanwang.png"><span>官方网站</span></div>
+                <div><img src="images/weibo.png"><span>官方微博</span></div>
+                </li>
+              </ul>
+              </div>
+              <div style="text-align:center; margin-top:10px;">copyright © 2015 milk&amp;bread. All Rights Reserved. | 浙ICP备15000846号-1</div>
+            </div>
+            
+            
+            
+            </div>
+            
+        
+       
+        <script src="assets/js/jquery.min.js"></script>
+        
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/skel.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+        <script src="assets/js/main.js"></script>
+        <!--<script src="assets/js/jquery.login_min.js"></script> IE7/8 下异常-->
+        <!--script src="assets/js/login.js"></script-->
+        
+        <script src="assets/js/productInfo/jquery.js"></script>
+        <script src="assets/js/productInfo/img_sild.js"></script>
+        <script src="assets/js/productInfo/selected.js"></script>
+        <script src="assets/js/productInfo/jquery_selected.js"></script>
+        <script src="assets/js/productInfo/num_input.js"></script>
+        <script src="assets/js/productInfo/city/jquery-1.11.3.min.js"></script>
+        <script src="assets/js/productInfo/city/Popt.js"></script>
+        <script src="assets/js/productInfo/city/cityJson.js"></script>
+        <script src="assets/js/popup_div.js"></script>
+       
+        <script src="assets/js/objArea.js"></script>
+        <script>
+		  
+            $(document).ready(function (e) {
+                /*
+				 由于input由css重绘，input的选择样式必须由js添加
+				*/
+				$('.Radio_Box').click(function (e){
+					
+					var obj = $('.Radio_Box');
+					for(i=0;i<obj.length;i++)
+					obj.eq(i).get(0).checked?obj.eq(i).addClass('Radio_Box_Sel'):obj.eq(i).removeClass('Radio_Box_Sel');
+					
+					});
+					
+					$('#Main_Page ul img').click(function(e) {
+                        var id = $('#Main_Page ul img').index($(this)[0]);
+						var obj = $('.Radio_Box');
+						obj.eq(id).get(0).checked = true;
+						for(i=0;i<obj.length;i++)
+					    obj.eq(i).get(0).checked?obj.eq(i).addClass('Radio_Box_Sel'):obj.eq(i).removeClass('Radio_Box_Sel');
+                    });
+					
+					$('#Pay_Now').click(function (e){
+						
+						if($('#PopBox').css('display')=='none')
+						{
+							$('#CoverShell').PopUpHideShell();
+						    $('#PopBox').PopUpCenter();
+						}
+						
+						});
+						
+						$('#Isee').click(function(e) {
+                        if($('#PopBox').css('display')!='none')
+						{
+							$('#PopBox').ClosePop();
+							$('#CoverShell').CloseHide();
+						}
+                        });
+						
+						$('.login').click(function (e){
+							$('.theme-popover').FixedPop();
+							$('#CoverShell').PopUpHideShell();
+							
+							
+							});
+							
+						$('.search').click(function (e){
+							
+							$('.search-popover').FixedPop();
+							$('#CoverShell').PopUpHideShell();
+							
+							
+							});
+							
+						$('.head_close').click(function(e) {
+                               
+							   
+							   $('.theme-popover').ClosePop();
+							   $('.search-popover').ClosePop();
+							   $('#CoverShell').CloseHide();
+							    
+                            });
+						
+				
+				
+			});
+        </script> 
+        
+    <script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F33080c2c7d6ecc482b69329fda6e5215' type='text/javascript'%3E%3C/script%3E")) </script><script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F33080c2c7d6ecc482b69329fda6e5215' type='text/javascript'%3E%3C/script%3E")) </script><script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F33080c2c7d6ecc482b69329fda6e5215' type='text/javascript'%3E%3C/script%3E")) </script></body>
+</html>

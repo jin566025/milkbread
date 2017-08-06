@@ -1,0 +1,190 @@
+@charset "utf-8";
+@media screen and (max-width:1920px){
+                    
+}
+ @media screen and (max-device-width:1920px)
+            {
+                @-webkit-keyframes bounce-up {
+                 25% {-webkit-transform: translateY(10px);}
+                 50%, 100% {-webkit-transform: translateY(0);}
+                 75% {-webkit-transform: translateY(-10px);}
+                }
+                @keyframes bounce-up {
+                  25% {transform: translateY(10px);}
+                  50%, 100% {transform: translateY(0);}
+                  75% {transform: translateY(-10px);}
+             }
+            #goToTop .animate-bounce-up{
+                background-image: url("images/toTop.png");
+                width: 24px; 
+                height: 26px; 
+                margin:100px auto;
+                -webkit-animation: bounce-up 1.4s linear infinite;
+                animation: bounce-up 1.4s linear infinite;
+                position:fixed;
+                z-index:100;
+                right:20px;
+                bottom:-50px;
+                visibility:visible;
+            }
+        }
+
+
+        
+ #cimg img
+         {
+             width:100%;
+             display:block;
+         }
+         #cimg .pg
+         {
+             width:23px;
+             height:23px;
+             position:absolute;
+             top:0px;
+             cursor:pointer;
+         }
+         
+         #cimg .lg_index
+         {
+             width:65px;
+             height:65px;
+             background:url(images/home_txt.png) no-repeat center;
+             position:absolute;
+             left:48%;
+             bottom:12%;
+             line-height:68px;
+             text-align:center;
+         }
+         
+         #cimg .lg_text
+         {
+             width:100%;
+             position:absolute;
+             text-align:center;
+             color:#FFF;
+             bottom:10%;
+         }
+         
+         #cimg .line-beh
+         {
+             font-size:16px;
+             margin-top:36px;
+             margin-bottom:12px;
+             width:100%;
+             height:40px;
+             background:url(images/line-beh.png) no-repeat bottom;
+             text-align:center;
+         }
+         #cimg ul li
+         {
+             width:240px;
+             height:240px;
+             display:inline-block;
+             float:left;
+         }
+         
+         #cimg ul li img
+         {
+             width:auto;
+             
+         }
+         @media only screen and (max-width:1990px)
+         {
+         #cimg  .Button
+         {
+             
+            
+             max-width:360px;
+             width: auto;
+             height:240px;
+             background:#EFEFEF;
+             cursor:pointer;
+             display:inline-block;
+             max-width:240px;
+             overflow-x:hidden;
+             
+         }
+         .u_u
+         {
+             width:1200px;
+             
+            
+             
+         }
+         
+         #cimg .lg_index
+         {
+             left:48.5%;
+         }
+         
+         }
+         
+         @media only screen and (max-width:1240px)
+         {
+         .u_u
+         {
+             width:960px;
+             
+         }
+         }
+         
+         @media only screen and (max-width:980px)
+         {
+         .u_u
+         {
+             width:480px;
+             
+         }
+         }
+        
+         @media only screen and (max-width:750px)
+         {
+             
+         .u_u
+         {
+             width:240px;
+             
+         }
+             
+             #cimg .lg_index
+             {
+                 left:44%;
+             }
+         }
+         
+          #cimg  .Button img
+          {
+             
+              display:block;
+              width:auto;
+              margin:95px auto;
+              
+              
+          }
+          @media screen and (max-width:1920px){
+          
+          #cimg  .Button
+          {
+             
+              display:inline-block;
+              width:240px;
+              height:240px;
+              margin:0;
+              padding:0;
+             
+              
+              
+          }
+          .u_u
+         {
+             width:1440px;
+             overflow:hidden; 
+             height:240px; 
+             position:relative; 
+             display:inline-block; 
+             margin:0;
+             padding:0;
+             
+         }
+        }

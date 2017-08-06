@@ -1,0 +1,371 @@
+<!doctype html>
+<html>
+  <head>
+   <meta charset="utf-8">
+   <meta http-equiv="Cache-Control" content="no-transform" /> 
+   <meta http-equiv="Cache-Control" content="no-siteapp" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes" />
+   <meta content="yes" name="apple-mobile-web-app-capable" />
+	 <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+	 <meta content="telephone=no" name="format-detection" />
+   <link href="assets/css/index2.0.css" rel="stylesheet">
+   <link href="assets/css/product2.0.css" rel="stylesheet">
+   <link href="assets/css/mediascreen.css" rel="stylesheet">
+   <link href="assets/css/beautifulRoom2.css" rel="stylesheet">
+   <title>美丽小居室</title>
+   <script src="fullpage/js/jquery-1.8.3.min.js"></script>
+   <script src="assets/js/Menu.js"></script>
+   <script src="assets/js/LoginBox.js"></script>
+   <script src="assets/js/MenuList.js"></script>
+   <script type="text/javascript" src="assets/js/easing.js"></script>
+   <script type="text/javascript" src="assets/js/jcarousellite.js"></script>
+   <script src="assets/js/main.js"></script>     
+   <script src="assets/js/hide.js"></script>
+   <script type="text/javascript">
+      $(document).ready(function(){
+        $('#demo-01').jCarouselLite({btnPrev: '#prev-01',btnNext: '#next-01',visible:6,auto:2000});   
+      });
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#demo-02').jCarouselLite({btnPrev: '#prev-02',btnNext: '#next-02',visible:6,auto:2000});   
+      });
+    </script>
+    
+
+
+
+
+ 
+  </head>
+  <body>
+
+<!--totop-->
+        <div id="goToTop">
+          <div class="animate-bounce-up"></div>
+          <a id="backtop" href="#H3"><img src="images/top_line.png"/></a>
+        </div>
+
+        <div class="Shell_box"></div>
+        <div class="Shell_box" style="z-index:1020;"></div>
+
+<!--登陆框-->
+<div id="LoginBox">
+  <div id="first_box">
+    <img id="LoginClose" src="images/close_1.png" onMouseOver="javascript:$(this).get(0).src='images/close_2.png';" onMouseOut="javascript:$(this).get(0).src='images/close_1.png';">
+    <img src="images/login_logo.png" id="Llogo"><span class="welcome"></span>
+  </div>
+  <div id="second_box">
+    <div id="QRCode">
+    <img src="images/login_er.png">
+    <p>请使用微信扫一扫一键登录</p>
+    <p>关注并绑定牛奶面包公众服务号，获取订单实时状态及家居潮流趋势。</p>
+    </div>
+  </div>
+  <div id="last_box"><img src="images/logo_footer.png"></div>
+</div>
+
+<div id="SearchBox">
+<input type="text"  id="stext" value="请输入关键词" onFocus="javascript:if(this.value=='请输入关键词')this.value='';" onBlur="javascript:if(this.value==''||this.value==null)this.value='请输入关键词';">
+<img id="SearchIcon" src="images/search_1.png" style="margin-left:10px;">
+<img id="SearchClose" src="images/close_1.png" style="margin-left:55px;" onMouseOver="javascript:$(this).get(0).src='images/close_2.png';" onMouseOut="javascript:$(this).get(0).src='images/close_1.png';">
+</div>
+
+<div id="head">
+  <div id="Black"></div>
+  <div id="LogoFiled">
+    <a href="Index.html"><img  style="" src="assets/css/images/header_logo.svg" ></a>
+  </div>
+  <div><a href="#" id="Menu" onClick="javascript:$('#LeftPop').LMenu();">Menu</a></div>
+  <!--<div style="text-align:center;border:1px solid red;">&nbsp;</div>-->
+  <div>
+  <a class="NaN Login" href="#"><span>Login</span></a><a class="NaN Order" href="Orders.html"><span>Orders(1)</span></a><a class="NaN Fav" href="Collection.html"><span>Favorites</span></a><!--
+--><a class="NaN Bag" href="#"><span>Bag(40)</span></a><!--
+--><a class="NaN Search" href="#"><span>Search</span></a>
+  </div>
+</div>
+
+
+<div id="RightPop">
+   <img src="assets/css/images/close.svg" id="MenuClose" onClick="javascript:$('#RightPop').RMenu();">
+   <div id="Rm">Bag</div>
+   <ul id="shopping_car">
+     <li class="first_p">
+       <a href="Products_Detal_New.html">
+         <img src="images/list1.png">
+         <div class="carcp">
+           <span>名称:花瓶</span>
+           <span>数量:10</span>
+           <span>价格:1200</span>
+         </div>
+       </a>
+     </li>
+     <li>
+       <a href="Products_Detal_New.html#">
+         <img src="images/list1.png">
+         <div class="carcp">
+           <span>名称:花瓶</span>
+           <span>数量:10</span>
+           <span>价格:1200</span>
+         </div>
+       </a>
+     </li>
+     <li>
+       <a href="Products_Detal_New.html">
+         <img src="images/list1.png">
+         <div class="carcp">
+           <span>名称:花瓶</span>
+           <span>数量:10</span>
+           <span>价格:1200</span>
+         </div>
+       </a>
+     </li>
+     <li class="filed"><a href="ShoppingCar.html" id="goto">前往购物车</a></li>
+   </ul>
+   
+   <ul id="pc_hidden">
+     <li><a href="#" id="Login" >Login</a></li>
+     <li><a href="#">Orders(1)</a></li>
+     <li><a href="#">Favorites</a></li>
+     <li><a href="#" id="Search" >Search</a></li>
+     
+   </ul>
+   </div>
+
+
+<div id="LeftPop">
+  <img src="assets/css/images/close.svg" id="MenuClose" onClick="javascript:$('#LeftPop').LMenu();">
+  <div>Menu</div>
+  <ul>
+    <li><a href="Index.html"><span class="en">Home</span><span class="ch">回到主页</span></a></li>
+    <li><a class="left_line">-</a></li>
+    <li><a href="BeautifulRoom.html"><span class="en">Beautifully Small House</span><span class="ch">美丽小居室</span></a></li>
+    <li><a href="#" class="left_line">-</a></li>
+    <li><a href="AllProduct_New.html"><span class="en">All Products</span><span class="ch">所有商品</span></a></li>
+    <li><a href="Classified.html"><span class="en">Classified Goods</span><span class="ch">分类商品</span></a></li>
+    <li><a href="NewestProduct.html"><span class="en">Newest Products</span><span class="ch">最新商品</span></a></li>
+    <li><a href="#" class="left_line">-</a></li>
+    <li><a href="2Story.html"><span class="en">Brand Story</span><span class="ch">品牌故事</span></a></li>
+    <li><a href="#" class="left_line">-</a></li>
+    <li><a href="#"><span class="en">Art into Life</span><span class="ch">艺心在延续</span></a></li>
+    <li><a href="#" class="left_line">-</a></li>
+    <li><a href="Index2.html"><span class="en">个人网站</span><span class="ch">个人网站</span></a></li>
+  </ul>
+</div>
+<!--头部及弹窗结束-->
+
+<!--中间部分-->
+<!--上半部分-->
+<div id="half_top">
+  <div class="top_image">
+    <div class="top_text">
+    		<div id="house">
+	       <p style="padding-bottom: 10px;">美丽小居室</p>
+	       <p>BEAUTIFULLY SMALL HOUSE</p>
+	      </div>
+       <ul>
+         <li><a href="#l1">田园&nbsp;Style</a></li>
+         <li><a href="#l2">艺术&nbsp;Style</a></li>
+         <li><a href="#l2">文艺&nbsp;Style</a></li>
+       </ul>
+     </div>
+     <div class="middle_text">
+       <div class="village">田园&nbsp;Style</div>
+       <p class="home_txt2">Love is to Accompany</p>
+     </div>
+  </div>
+</div>
+<!--搭配单品-->
+<div class="line_single">
+  搭&nbsp;配&nbsp;单&nbsp;品
+  
+</div>
+
+<!--图片滚动-->
+<div class="roll_images">
+    <div class="carousel">
+        <a href="javascript:void(0);" class="prev" id="prev-01">
+          <img src="images/prev.png">
+        </a>
+        <div class="jCarouselLite" id="demo-01">
+          <ul style="overflow:hidden">
+            <li><img src="productImg/5.jpg"></li>
+            <li><img src="productImg/1.jpg"></li>
+            <li><img src="productImg/2.jpg"></li>
+            <li><img src="productImg/3.jpg"></li>
+            <li><img src="productImg/4.jpg"></li>
+            <li><img src="productImg/6.jpg"></li>
+            <li><img src="productImg/3.jpg"></li>
+            <li><img src="productImg/4.jpg"></li>
+            <li><img src="productImg/6.jpg"></li>
+            <li><img src="productImg/1.jpg"></li>
+            <li><img src="productImg/2.jpg"></li>
+            <li><img src="productImg/3.jpg"></li>
+          </ul>
+        </div>
+        <a href="javascript:void(0);" class="next" id="next-01">
+          <img src="images/next.png">
+        </a>
+        <div class="clear"></div> 
+    </div>
+</div>
+
+<!--下半部分-->
+<div id="half_bottom">
+  <div class="bottom_image" id="l2">
+    <div class="bottom_text">
+       <div class="art">艺术&nbsp;Style</div>
+       <p class="bottom_txt2">My Little World</p>
+     </div>
+  </div>
+</div>
+<!--双拼图片-->
+<div class="double_pic">
+  <div class="double_pic1">
+    <img src="images/l-img.jpg" style="display:block">
+  </div>
+  <div class="double_pic2">
+    <img src="images/r-img.jpg" style="display:block">
+  </div>
+</div>
+
+<!--搭配单品-->
+<div class="line_single">
+  搭&nbsp;配&nbsp;单&nbsp;品
+  
+</div>
+<!--图片滚动-->
+<div class="roll_images">
+    <div class="carousel">
+        <a href="javascript:void(0);" class="prev" id="prev-02"><img src="images/prev.png"></a>
+        <div class="jCarouselLite" id="demo-02">
+          <ul style="overflow:hidden">
+            <li><img src="productImg/5.jpg"></li>
+            <li><img src="productImg/1.jpg"></li>
+            <li><img src="productImg/2.jpg"></li>
+            <li><img src="productImg/3.jpg"></li>
+            <li><img src="productImg/4.jpg"></li>
+            <li><img src="productImg/6.jpg"></li>
+            <li><img src="productImg/3.jpg"></li>
+            <li><img src="productImg/4.jpg"></li>
+            <li><img src="productImg/6.jpg"></li>
+            <li><img src="productImg/1.jpg"></li>
+            <li><img src="productImg/2.jpg"></li>
+            <li><img src="productImg/3.jpg"></li>
+          </ul>
+        </div>
+        <a href="javascript:void(0);" class="next" id="next-02"><img src="images/next.png"></a>
+        <div class="clear"></div> 
+    </div>
+</div>
+
+
+<!-- 底部 -->
+<div id="blank">
+  
+</div>
+<div class="bottom_section">
+    <div id="bottom">
+        <div id="navigation">
+        		<div class="bottom_nav">
+	              <ul>
+	                <li><a class="nav_first" href="2ContactUs.html">关于我们</a></li>
+	              </ul>
+	            </div>
+	            <div class="bottom_nav">
+	              <ul>
+	                <li><a class="nav_first" href="2Common_problem.html">购物指南</a></li>
+	              </ul>
+	            </div>
+	            <div class="bottom_nav">
+	              <ul>
+	                <li><a class="nav_first" href="2Associator.html">会员中心</a></li>
+	              </ul>
+	            </div>
+
+	            <div class="bottom_nav">
+	              <ul>
+	                <li><a class="nav_first" href="2Payment.html">支付方式</a></li>
+	              </ul>
+	            </div>
+	            <div class="bottom_nav">
+	              <ul>
+	                <li><a class="nav_first" href="2Logistical_fare.html">配送方式</a></li>
+	              </ul>
+	            </div>
+	            <div class="bottom_nav">
+	              <ul>
+	                <li><a class="nav_first" href="2Return_exchange.html">售后服务</a></li>
+	              </ul>
+	            </div>
+        </div>
+
+         <div id="bottom_text">
+           <p>在线客服</p>
+           <P class="online_service"><a href=""><IMG id="tq_kefu_main" version="20100823" style="background:transparent none repeat scroll 0% 0%;cursor:pointer" onclick="TQKF.kefuimg.Distrabute()" /></a></P>
+           <p class="service">客服电话</p>
+           <p class="tel">0574-88081153</p>
+         </div>
+   
+         <ul id="ul_image">
+            <li class="li_img"><img src="images/weibo.png"><a>官方微博</a></li> 
+            <li class="li_img"><img src="images/guanwang.png"><a>官方网站</a></li>
+            <li class="li_img"><img src="images/weixin_er.png"><a>官方微信</a></li>
+            
+        </ul>
+          
+    </div>
+    <div class="copyright">
+      <span style="color:#5E5C5C">copyright © 2015-2016 milk&bread</span>
+      <span style="color:#5E5C5C">All Rights Reserved.| 浙ICP备15000846号-1</span>
+    </div>
+  </div>
+
+          <script>
+            function pageScroll() { 
+                         window.scrollBy(0,-10); 
+                         scrolldelay = setTimeout('pageScroll()',500); 
+                         if($(document).scrollTop()==0) clearTimeout(scrolldelay); 
+                } 
+          </script>
+        <script>
+          window.onscroll=function()
+          {
+            if($(window).scrollTop()>=20)
+            $('#goToTop').addClass('see');
+            else 
+            $('#goToTop').removeClass('see');
+          }
+          </script>
+
+          <script type="text/javascript">
+          $(document).ready(function(){
+              //首先将#back-to-top隐藏
+              $("#goToTop").hide();
+              //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
+              $(function () {
+                $(window).scroll(function(){
+              if ($(window).scrollTop()>30){
+                $("#goToTop").fadeIn(500);
+              }
+              else
+              {
+                $("#goToTop").fadeOut(500);
+              }
+              });
+              //当点击跳转链接后，回到页面顶部位置
+              $("#goToTop").click(function(){
+                $('body,html').animate({scrollTop:0},1000);
+                return false;
+              });
+              });
+              });
+          </script>
+
+  
+
+
+   <SCRIPT LANGUAGE="JavaScript" src=http://float2006.tq.cn/floatcard?adminid=9747713&sort=2 ></SCRIPT>
+    
+  </body>
+</html>

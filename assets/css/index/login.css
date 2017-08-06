@@ -1,0 +1,198 @@
+::selection {
+	background:#eeecea;
+	color:#333333;
+}
+
+::-moz-selection {
+	background:#eeecea;
+	color:#333333;
+}
+audio:not([controls]) {
+	display:none
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+	empty-cells:show
+}
+ol, ul, menu {
+	list-style:none
+}
+img {
+	border:0
+}
+a:focus {
+	outline:none
+}
+em, i {
+	font-style: normal;
+}
+*[hidden] {
+	display:none
+}
+a {
+	color:#0088DB;
+	text-decoration:none;
+	cursor:pointer
+}
+a:hover {
+	color:#2A5E8E
+}
+/*window*/
+.theme-popover {
+	z-index:9999;
+	position:fixed;
+	top:50%;
+	left:50%;
+	width:670px;
+	height:486px;
+	margin:-243px 0 0 -335px;
+	border-radius:15px;
+	border:solid 1px #666;
+	background-color:#fff;
+	display:none;
+	box-shadow: 0 0 1px #666;
+}
+
+.theme-poptit {
+	border-bottom:1px solid #ddd;
+	padding:30px 25px;
+	width:100%;
+	height: 65px;
+	position:relative;
+	overflow: hidden;
+}
+.theme-poptit .head_login{
+	float: left;
+	font-size: 19px;
+	padding: 0px 8px;
+}
+.login_text{
+	margin-top: -12px;
+	padding: 0px;
+}
+.signin{
+	position: relative;
+	overflow: hidden;
+}
+.signin1{
+	padding-left: 2px;
+}
+.signin li{
+	padding: 12px 0px;
+}
+.signin1 li{
+	padding: 17px 0px;
+}
+.login_content{
+	margin-top: 31px;
+	margin-left: 0px;
+	border-bottom: 1px solid #8E8892;
+	width: 100%;
+	position:relative;
+	overflow: hidden;
+	height: 340px
+}
+.login_content .login_align{
+	float: left;
+	height: 200px;
+}
+.login_content{
+	padding-left: 45px;
+}
+.login_input{
+	width: 60%;
+}
+.forget{
+	padding-left: 2px;
+}
+.remember{
+	float: left;
+	height: 50px;
+}
+.login_right{
+	width: 40%;
+	margin-top: 20px;
+}
+
+.theme-popbod {
+	padding:60px 15px;
+	color:#444;
+	height: 148px;
+}
+/*ºÏ×÷ÕËºÅµÇÂ¼*/
+.login_company{
+	width: 100%;
+	height: 41px;
+	margin-top: 33px;
+	position: relative;
+	overflow: hidden;
+}
+.login_company ul{
+	margin: 0px auto;
+	padding: 0px;
+}
+.login_company ul li{
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+.login_company ul li a{
+	width: 40px;
+	margin: auto 4px;
+	border: none;
+}
+/*¶þÎ¬Âë*/
+.login_erweima{
+	width: 100%;
+	margin-top: 18%;
+	padding-left: 15%;
+}
+.login_erweima img{
+	margin: auto auto;
+	margin-left: 5%;
+}
+.login_erweima_content{
+	width: 100%;
+}
+.login_erweima_content p{
+	padding: 0px;
+	margin: 0px auto;
+	color: #8E8892;
+	font-size: 12px;
+
+}
+/*¹Ø±Õ·ûºÅ*/
+.theme-poptit .close {
+	float:right;
+	color:#999;
+	padding:5px;
+	margin:-14px -5px -5px;
+	font:bold 14px/14px simsun;
+	text-shadow:0 1px 0 #ddd;
+	border: none;
+}
+.theme-poptit .close:hover {
+	color:#444;
+	border: none;
+}
+.dform {
+	padding:18px auto;
+	text-align: center;
+}
+.theme-signin {
+	margin: 0px 0px 0px 75px;
+	text-align:left;
+	font-size: 14px;
+}
+.theme-signin li {
+	padding-left: 0px;
+	margin-bottom: 15px;
+	color: #8E8892;
+}
+.theme-signin .btn {
+	margin-bottom: 10px;
+}
+.input{
+	margin-top: 118px;
+}
